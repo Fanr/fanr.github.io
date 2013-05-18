@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Google | 范文斌的博客]]></title>
-  <link href="http://Fanr.github.io/categories/google/atom.xml" rel="self"/>
-  <link href="http://Fanr.github.io/"/>
-  <updated>2013-05-18T14:29:06+08:00</updated>
-  <id>http://Fanr.github.io/</id>
+  <link href="http://fanwenbin.com/categories/google/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-05-18T14:55:14+08:00</updated>
+  <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Google中文搜索指南]]></title>
-    <link href="http://Fanr.github.io/2012/06/01/google-china-search-guide/"/>
+    <link href="http://fanwenbin.com/2012/06/01/google-china-search-guide/"/>
     <updated>2012-06-01T13:21:00+08:00</updated>
-    <id>http://Fanr.github.io/2012/06/01/google-china-search-guide</id>
+    <id>http://fanwenbin.com/2012/06/01/google-china-search-guide</id>
     <content type="html"><![CDATA[<p>Google用户体验那么好却频频被重置，这么好的搜索引擎却不能发挥他的价值，实属惋惜啊。</p>
 
 <p><img src="/images/2012/06/01/1.jpg" alt="可能被阻断" /></p>

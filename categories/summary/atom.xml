@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Summary | 范文斌的博客]]></title>
-  <link href="http://Fanr.github.io/categories/summary/atom.xml" rel="self"/>
-  <link href="http://Fanr.github.io/"/>
-  <updated>2013-05-18T14:29:06+08:00</updated>
-  <id>http://Fanr.github.io/</id>
+  <link href="http://fanwenbin.com/categories/summary/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-05-18T14:55:14+08:00</updated>
+  <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[三周年小结]]></title>
-    <link href="http://Fanr.github.io/2012/10/28/three-years-summary/"/>
+    <link href="http://fanwenbin.com/2012/10/28/three-years-summary/"/>
     <updated>2012-10-28T13:08:00+08:00</updated>
-    <id>http://Fanr.github.io/2012/10/28/three-years-summary</id>
+    <id>http://fanwenbin.com/2012/10/28/three-years-summary</id>
     <content type="html"><![CDATA[<p>目测建博三周年，是时候回顾一下了！</p>
 
 <p>2009年10月的样子，入手了Fanta7.cn这屌丝域名，配上PJBlog，足足玩了小半年。</p>

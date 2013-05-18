@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Mac | 范文斌的博客]]></title>
-  <link href="http://Fanr.github.io/categories/mac/atom.xml" rel="self"/>
-  <link href="http://Fanr.github.io/"/>
-  <updated>2013-05-18T14:29:06+08:00</updated>
-  <id>http://Fanr.github.io/</id>
+  <link href="http://fanwenbin.com/categories/mac/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-05-18T14:55:14+08:00</updated>
+  <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[清除MAC回收站中的顽固垃圾]]></title>
-    <link href="http://Fanr.github.io/2013/04/23/clean-up-recycle-bin/"/>
+    <link href="http://fanwenbin.com/2013/04/23/clean-up-recycle-bin/"/>
     <updated>2013-04-23T10:17:00+08:00</updated>
-    <id>http://Fanr.github.io/2013/04/23/clean-up-recycle-bin</id>
+    <id>http://fanwenbin.com/2013/04/23/clean-up-recycle-bin</id>
     <content type="html"><![CDATA[<p>总是会遇到一些无法从回收站移除的文件，要么是单个文件，要么文件夹无限循环下去。</p>
 
 <p>见不得回收站堆满垃圾，和不停的躲避贱人的追赶一样，眼不见心不烦。</p>

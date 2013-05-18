@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Wordpress | 范文斌的博客]]></title>
-  <link href="http://Fanr.github.io/categories/wordpress/atom.xml" rel="self"/>
-  <link href="http://Fanr.github.io/"/>
-  <updated>2013-05-18T14:29:06+08:00</updated>
-  <id>http://Fanr.github.io/</id>
+  <link href="http://fanwenbin.com/categories/wordpress/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-05-18T14:55:14+08:00</updated>
+  <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[OptimusII吐血放出]]></title>
-    <link href="http://Fanr.github.io/2012/06/06/theme-OptimusII-deploy/"/>
+    <link href="http://fanwenbin.com/2012/06/06/theme-OptimusII-deploy/"/>
     <updated>2012-06-06T13:16:00+08:00</updated>
-    <id>http://Fanr.github.io/2012/06/06/theme-OptimusII-deploy</id>
+    <id>http://fanwenbin.com/2012/06/06/theme-OptimusII-deploy</id>
     <content type="html"><![CDATA[<p>没错,博客现在这个鸟样子的主题就是他了!不要998,更不要99,免费,免费派发中……</p>
 
 <p>前一阵子追问主题的几位盆友,你们如愿以偿了!</p>

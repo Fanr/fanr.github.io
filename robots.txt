@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://Fanr.github.io/sitemap.xml 
+Sitemap: http://fanwenbin.com/sitemap.xml 

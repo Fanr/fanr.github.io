@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Birthday | 范文斌的博客]]></title>
-  <link href="http://Fanr.github.io/categories/birthday/atom.xml" rel="self"/>
-  <link href="http://Fanr.github.io/"/>
-  <updated>2013-05-18T14:29:06+08:00</updated>
-  <id>http://Fanr.github.io/</id>
+  <link href="http://fanwenbin.com/categories/birthday/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-05-18T14:55:14+08:00</updated>
+  <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[祝我生日快乐]]></title>
-    <link href="http://Fanr.github.io/2012/11/13/happy-birthday-2012/"/>
+    <link href="http://fanwenbin.com/2012/11/13/happy-birthday-2012/"/>
     <updated>2012-11-13T12:30:00+08:00</updated>
-    <id>http://Fanr.github.io/2012/11/13/happy-birthday-2012</id>
+    <id>http://fanwenbin.com/2012/11/13/happy-birthday-2012</id>
     <content type="html"><![CDATA[<p><img src="/images/2012/11/13/1.png" alt="22岁生日活了8036" /></p>
 
 <p>这个生日哥死活都不想过，不想长大，年轻or成熟，傻傻分不清楚。</p>

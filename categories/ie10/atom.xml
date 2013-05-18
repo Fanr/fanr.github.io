@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: IE10 | 范文斌的博客]]></title>
-  <link href="http://Fanr.github.io/categories/ie10/atom.xml" rel="self"/>
-  <link href="http://Fanr.github.io/"/>
-  <updated>2013-05-18T14:29:06+08:00</updated>
-  <id>http://Fanr.github.io/</id>
+  <link href="http://fanwenbin.com/categories/ie10/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-05-18T14:55:14+08:00</updated>
+  <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[解决Win8 IE10无法打开]]></title>
-    <link href="http://Fanr.github.io/2013/01/11/fix-Win8-IE10-can-not-open/"/>
+    <link href="http://fanwenbin.com/2013/01/11/fix-Win8-IE10-can-not-open/"/>
     <updated>2013-01-11T12:25:00+08:00</updated>
-    <id>http://Fanr.github.io/2013/01/11/fix-Win8-IE10-can-not-open</id>
+    <id>http://fanwenbin.com/2013/01/11/fix-Win8-IE10-can-not-open</id>
     <content type="html"><![CDATA[<p>装了一堆常用(根本不用)软件,不知道是哪个,直接导致IE10无法打开,但却可以使用管理员权限打开.</p>
 
 <p>卸载重新安装,未果.</p>

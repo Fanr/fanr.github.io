@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: MySQL | 范文斌的博客]]></title>
-  <link href="http://Fanr.github.io/categories/mysql/atom.xml" rel="self"/>
-  <link href="http://Fanr.github.io/"/>
-  <updated>2013-05-18T14:29:06+08:00</updated>
-  <id>http://Fanr.github.io/</id>
+  <link href="http://fanwenbin.com/categories/mysql/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-05-18T14:55:14+08:00</updated>
+  <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Ubuntu搭建PHP+Apache+MySQL环境]]></title>
-    <link href="http://Fanr.github.io/2012/04/22/ubuntu-php-apache-mysql/"/>
+    <link href="http://fanwenbin.com/2012/04/22/ubuntu-php-apache-mysql/"/>
     <updated>2012-04-22T13:33:00+08:00</updated>
-    <id>http://Fanr.github.io/2012/04/22/ubuntu-php-apache-mysql</id>
+    <id>http://fanwenbin.com/2012/04/22/ubuntu-php-apache-mysql</id>
     <content type="html"><![CDATA[<p>安装Apache2</p>
 
 <p>打开终端，输入“sudo apt-get install apache2”，回车;（安装apache2.0）

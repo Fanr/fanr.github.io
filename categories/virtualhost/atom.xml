@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: VirtualHost | 范文斌的博客]]></title>
-  <link href="http://Fanr.github.io/categories/virtualhost/atom.xml" rel="self"/>
-  <link href="http://Fanr.github.io/"/>
-  <updated>2013-05-18T14:29:06+08:00</updated>
-  <id>http://Fanr.github.io/</id>
+  <link href="http://fanwenbin.com/categories/virtualhost/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-05-18T14:55:14+08:00</updated>
+  <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Ubuntu Apache虚拟主机设置]]></title>
-    <link href="http://Fanr.github.io/2012/04/26/ubuntu-apache-virtualhost-configuration/"/>
+    <link href="http://fanwenbin.com/2012/04/26/ubuntu-apache-virtualhost-configuration/"/>
     <updated>2012-04-26T13:29:00+08:00</updated>
-    <id>http://Fanr.github.io/2012/04/26/ubuntu-apache-virtualhost-configuration</id>
+    <id>http://fanwenbin.com/2012/04/26/ubuntu-apache-virtualhost-configuration</id>
     <content type="html"><![CDATA[<p>修改hosts是必须的，例如在本地测试我的博客，hosts文件中添加 127.0.0.1  demo.ifffff.com</p>
 
 <p>打开终端，cd /etc/apache2/sites-available 回车</p>
@@ -33,7 +33,7 @@
 
 <p><VirtualHost *:80>
 ServerName demo.ifffff.com
-ServerAdmin <a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x61;&#x64;&#109;&#x69;&#110;&#x40;&#105;&#102;&#x66;&#102;&#x66;&#102;&#x2e;&#99;&#111;&#x6d;">&#x61;&#100;&#109;&#x69;&#110;&#x40;&#105;&#x66;&#x66;&#102;&#102;&#x66;&#46;&#x63;&#x6f;&#109;</a>
+ServerAdmin <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#x61;&#100;&#x6d;&#x69;&#110;&#64;&#105;&#102;&#102;&#x66;&#102;&#102;&#x2e;&#x63;&#111;&#109;">&#97;&#x64;&#x6d;&#105;&#x6e;&#x40;&#x69;&#102;&#102;&#102;&#102;&#x66;&#x2e;&#x63;&#111;&#109;</a>
 DocumentRoot “/var/www/ifffff/”
 ErrorLog “/var/log/apache2/edunuke_errors.log”
 CustomLog “/var/log/apache2/edunuke_accesses.log” common
