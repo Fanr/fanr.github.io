@@ -4,7 +4,7 @@
   <title><![CDATA[范文斌的博客]]></title>
   <link href="http://Fanr.github.io/atom.xml" rel="self"/>
   <link href="http://Fanr.github.io/"/>
-  <updated>2013-05-18T10:32:53+08:00</updated>
+  <updated>2013-05-18T12:27:04+08:00</updated>
   <id>http://Fanr.github.io/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
@@ -31,6 +31,29 @@
 <p>exit</p>
 
 <p>搞定，收工。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[解决Win8 IE10无法打开]]></title>
+    <link href="http://Fanr.github.io/blog/2013/01/11/fix-Win8-IE10-can-not-open/"/>
+    <updated>2013-01-11T12:25:00+08:00</updated>
+    <id>http://Fanr.github.io/blog/2013/01/11/fix-Win8-IE10-can-not-open</id>
+    <content type="html"><![CDATA[<p>瞎逼装了一堆常用软件,不知道是哪个,直接导致IE10无法打开,但却可以使用管理员权限打开.</p>
+
+<p>卸载重新安装,未果.</p>
+
+<p>唯一解决方案</p>
+
+<p>WIN+R, 输入regedit,回车</p>
+
+<p>找到 HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main</p>
+
+<p>右键Main,选择权限.</p>
+
+<p>高级，右下角的“启用继承”按钮即可。</p>
+
+<p>目测只能编辑注册表修正</p>
 ]]></content>
   </entry>
   
