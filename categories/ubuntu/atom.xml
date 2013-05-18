@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | 范文斌的博客]]></title>
   <link href="http://fanwenbin.com/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://fanwenbin.com/"/>
-  <updated>2013-05-18T16:57:20+08:00</updated>
+  <updated>2013-05-18T16:58:29+08:00</updated>
   <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
@@ -33,7 +33,7 @@
 
 <p><VirtualHost *:80>
 ServerName demo.ifffff.com
-ServerAdmin <a href="&#x6d;&#97;&#x69;&#108;&#116;&#111;&#x3a;&#97;&#100;&#109;&#105;&#x6e;&#64;&#x69;&#x66;&#x66;&#102;&#102;&#102;&#x2e;&#99;&#x6f;&#109;">&#x61;&#x64;&#x6d;&#x69;&#x6e;&#64;&#x69;&#102;&#x66;&#x66;&#x66;&#102;&#46;&#x63;&#x6f;&#109;</a>
+ServerAdmin <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#97;&#x64;&#x6d;&#x69;&#110;&#x40;&#105;&#102;&#102;&#x66;&#102;&#x66;&#x2e;&#99;&#x6f;&#109;">&#x61;&#100;&#x6d;&#x69;&#x6e;&#x40;&#x69;&#x66;&#102;&#102;&#102;&#x66;&#x2e;&#99;&#x6f;&#x6d;</a>
 DocumentRoot “/var/www/ifffff/”
 ErrorLog “/var/log/apache2/edunuke_errors.log”
 CustomLog “/var/log/apache2/edunuke_accesses.log” common
