@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Apache | 范文斌的博客]]></title>
   <link href="http://Fanr.github.io/categories/apache/atom.xml" rel="self"/>
   <link href="http://Fanr.github.io/"/>
-  <updated>2013-05-18T14:19:29+08:00</updated>
+  <updated>2013-05-18T14:29:06+08:00</updated>
   <id>http://Fanr.github.io/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
@@ -33,7 +33,7 @@
 
 <p><VirtualHost *:80>
 ServerName demo.ifffff.com
-ServerAdmin <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#x6f;&#x3a;&#97;&#100;&#109;&#105;&#110;&#x40;&#105;&#102;&#x66;&#102;&#x66;&#x66;&#x2e;&#x63;&#x6f;&#x6d;">&#x61;&#100;&#x6d;&#x69;&#x6e;&#x40;&#105;&#x66;&#102;&#102;&#x66;&#102;&#46;&#x63;&#x6f;&#109;</a>
+ServerAdmin <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#97;&#x64;&#109;&#x69;&#110;&#x40;&#x69;&#x66;&#x66;&#102;&#102;&#x66;&#x2e;&#x63;&#x6f;&#109;">&#97;&#100;&#109;&#105;&#x6e;&#x40;&#105;&#102;&#102;&#102;&#x66;&#102;&#46;&#x63;&#x6f;&#109;</a>
 DocumentRoot “/var/www/ifffff/”
 ErrorLog “/var/log/apache2/edunuke_errors.log”
 CustomLog “/var/log/apache2/edunuke_accesses.log” common

@@ -4,7 +4,7 @@
   <title><![CDATA[范文斌的博客]]></title>
   <link href="http://Fanr.github.io/atom.xml" rel="self"/>
   <link href="http://Fanr.github.io/"/>
-  <updated>2013-05-18T14:19:29+08:00</updated>
+  <updated>2013-05-18T14:29:06+08:00</updated>
   <id>http://Fanr.github.io/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
@@ -135,7 +135,7 @@
 
 <p>排除更换程序和域名以及数据丢失的损失，目测只有如下的数据：</p>
 
-<p><img src="images/2012/10/28/1.png" alt="概况" /></p>
+<p><img src="http://Fanr.github.io/images/2012/10/28/1.png" alt="概况" /></p>
 
 <!--more-->
 
@@ -166,11 +166,11 @@
 
 <p>三个特别奖项</p>
 
-<p><img src="images/2012/10/28/2.png" alt="热门文件" /></p>
+<p><img src="http://Fanr.github.io/images/2012/10/28/2.png" alt="热门文件" /></p>
 
 <p>在Attachment附件文件中，gfwlist.pac依旧领跑全场，获得终身成就奖</p>
 
-<p><img src="images/2012/10/28/3.png" alt="总冠军" /></p>
+<p><img src="http://Fanr.github.io/images/2012/10/28/3.png" alt="总冠军" /></p>
 
 <p>以上文件于网盘页面可见</p>
 
@@ -197,7 +197,7 @@
 
 <p>前一阵子追问主题的几位盆友,你们如愿以偿了!</p>
 
-<p><img src="images/2012/06/06/OptimusII.jpg" alt="OptimusII Theme Preview" /></p>
+<p><img src="http://Fanr.github.io/images/2012/06/06/OptimusII.jpg" alt="OptimusII Theme Preview" /></p>
 
 <!--more-->
 
@@ -215,7 +215,7 @@
     <id>http://Fanr.github.io/2012/06/01/google-china-search-guide</id>
     <content type="html"><![CDATA[<p>Google用户体验那么好却频频被重置，这么好的搜索引擎却不能发挥他的价值，实属惋惜啊。</p>
 
-<p><img src="images/2012/06/01/1.jpg" alt="可能被阻断" /></p>
+<p><img src="http://Fanr.github.io/images/2012/06/01/1.jpg" alt="可能被阻断" /></p>
 
 <p>不爽你懂的。</p>
 
@@ -256,7 +256,7 @@
 
 <p><VirtualHost *:80>
 ServerName demo.ifffff.com
-ServerAdmin <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x61;&#100;&#109;&#x69;&#110;&#64;&#x69;&#x66;&#102;&#102;&#x66;&#x66;&#x2e;&#x63;&#x6f;&#109;">&#97;&#100;&#109;&#105;&#110;&#x40;&#x69;&#102;&#102;&#x66;&#102;&#102;&#46;&#99;&#x6f;&#x6d;</a>
+ServerAdmin <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#97;&#x64;&#109;&#105;&#110;&#x40;&#105;&#102;&#102;&#102;&#102;&#x66;&#46;&#99;&#x6f;&#x6d;">&#x61;&#x64;&#109;&#x69;&#110;&#x40;&#105;&#102;&#102;&#x66;&#x66;&#x66;&#x2e;&#99;&#111;&#x6d;</a>
 DocumentRoot “/var/www/ifffff/”
 ErrorLog “/var/log/apache2/edunuke_errors.log”
 CustomLog “/var/log/apache2/edunuke_accesses.log” common
