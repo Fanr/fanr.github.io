@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: VirtualHost | 范文斌的博客]]></title>
+  <link href="http://Fanr.github.io/blog/categories/virtualhost/atom.xml" rel="self"/>
+  <link href="http://Fanr.github.io/"/>
+  <updated>2013-05-18T13:42:59+08:00</updated>
+  <id>http://Fanr.github.io/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu Apache虚拟主机设置]]></title>
+    <link href="http://Fanr.github.io/blog/2012/04/26/ubuntu-apache-virtualhost-configuration/"/>
+    <updated>2012-04-26T13:29:00+08:00</updated>
+    <id>http://Fanr.github.io/blog/2012/04/26/ubuntu-apache-virtualhost-configuration</id>
+    <content type="html"><![CDATA[<p>修改hosts是必须的，例如在本地测试我的博客，hosts文件中添加 127.0.0.1  demo.ifffff.com</p>
+
+<p>打开终端，cd /etc/apache2/sites-available 回车</p>
+
+<p>sudo cp default demo.ifffff.com</p>
+
+<p>sudo gedit demo.ifffff.com</p>
+
+<!--more-->
+
+
+<p>复制下面的文字到demo.ifffff.com这个文件中，ServerName和DocumentRoot改成你自己的。</p>
+
+<p><VirtualHost *:80>
+ServerName demo.ifffff.com
+ServerAdmin <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#97;&#100;&#109;&#x69;&#110;&#64;&#105;&#102;&#102;&#x66;&#102;&#x66;&#x2e;&#x63;&#111;&#x6d;">&#x61;&#100;&#109;&#105;&#x6e;&#64;&#x69;&#x66;&#x66;&#102;&#x66;&#102;&#46;&#x63;&#111;&#109;</a>
+DocumentRoot “/var/www/ifffff/”
+ErrorLog “/var/log/apache2/edunuke_errors.log”
+CustomLog “/var/log/apache2/edunuke_accesses.log” common
+</VirtualHost></p>
+
+<p>终端输入：
+sudo a2ensite demo.iffff.com 回车</p>
+
+<p>这样的话，虚拟主机站点 demo.ifffff.com 就已经安装好了。这时也可以在 /etc/apache2/sites-enabled/ 目录中发现多了一个到/etc/apache2/sites-available/demo.ifffff.com 的软链接。接下来就是将 Apache2 重启来使虚拟主机站点运行起来：</p>
+
+<p>sudo /etc/init.d/apache2 restart 这里可以使用reload 重新加载</p>
+
+<p>访问demo.ifffff.com 一切就妥妥的了～</p>
+]]></content>
+  </entry>
+  
+</feed>

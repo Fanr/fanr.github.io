@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Wordpress | 范文斌的博客]]></title>
+  <link href="http://Fanr.github.io/blog/categories/wordpress/atom.xml" rel="self"/>
+  <link href="http://Fanr.github.io/"/>
+  <updated>2013-05-18T13:42:59+08:00</updated>
+  <id>http://Fanr.github.io/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[OptimusII吐血放出]]></title>
+    <link href="http://Fanr.github.io/blog/2012/06/06/theme-OptimusII-deploy/"/>
+    <updated>2012-06-06T13:16:00+08:00</updated>
+    <id>http://Fanr.github.io/blog/2012/06/06/theme-OptimusII-deploy</id>
+    <content type="html"><![CDATA[<p>没错,博客现在这个鸟样子的主题就是他了!不要998,更不要99,免费,免费派发中……</p>
+
+<p>前一阵子追问主题的几位盆友,你们如愿以偿了!</p>
+
+<p><img src="images/2012/06/06/OptimusII.jpg" alt="OptimusII Theme Preview" /></p>
+
+<!--more-->
+
+
+<p>主题介绍查看<a href="http://ifffff.com/2523.html">此文</a></p>
+
+<p>传送门: <a href="https://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_2375311776&amp;rss=1">下载1</a> <a href="https://www.dropbox.com/s/fmzakyh9sq99tjs/OptimusII.zip">下载2</a></p>
+]]></content>
+  </entry>
+  
+</feed>

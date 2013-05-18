@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac | 范文斌的博客]]></title>
   <link href="http://Fanr.github.io/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://Fanr.github.io/"/>
-  <updated>2013-05-18T12:27:04+08:00</updated>
+  <updated>2013-05-18T13:42:59+08:00</updated>
   <id>http://Fanr.github.io/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
@@ -21,6 +21,9 @@
     <content type="html"><![CDATA[<p>总是会遇到一些无法从回收站移除的文件，要么是单个文件，要么文件夹无限循环下去。</p>
 
 <p>见不得回收站堆满垃圾，和不停的躲避贱人的追赶一样，眼不见心不烦。</p>
+
+<!--more-->
+
 
 <p>sudo -s</p>
 

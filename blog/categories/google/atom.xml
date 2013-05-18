@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Google | 范文斌的博客]]></title>
+  <link href="http://Fanr.github.io/blog/categories/google/atom.xml" rel="self"/>
+  <link href="http://Fanr.github.io/"/>
+  <updated>2013-05-18T13:42:59+08:00</updated>
+  <id>http://Fanr.github.io/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Google中文搜索指南]]></title>
+    <link href="http://Fanr.github.io/blog/2012/06/01/google-china-search-guide/"/>
+    <updated>2012-06-01T13:21:00+08:00</updated>
+    <id>http://Fanr.github.io/blog/2012/06/01/google-china-search-guide</id>
+    <content type="html"><![CDATA[<p>Google用户体验那么好却频频被重置，这么好的搜索引擎却不能发挥他的价值，实属惋惜啊。</p>
+
+<p><img src="images/2012/06/01/1.jpg" alt="可能被阻断" /></p>
+
+<p>不爽你懂的。</p>
+
+<p>Google同时也附上了一个说明文档，貌似也不能通过正常手段直接打开或者下载到，唉，悲哀啊！</p>
+
+<p>google_chinasearch_chinese.pdf 传送门：<a href="https://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=l9r6msnbd1&amp;file_id=f_2345132686&amp;rss=1">下载1</a> <a href="https://www.dropbox.com/s/3a753dpvxi0bb5x/google_chinasearchchinese.pdf">下载2</a></p>
+]]></content>
+  </entry>
+  
+</feed>

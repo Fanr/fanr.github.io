@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>解决Win8 IE10无法打开 - 范文斌的博客</title>
+  <title>Ubuntu Apache虚拟主机设置 - 范文斌的博客</title>
   <meta name="author" content="范文斌">
 
   
-  <meta name="description" content="装了一堆常用(根本不用)软件,不知道是哪个,直接导致IE10无法打开,但却可以使用管理员权限打开. 卸载重新安装,未果. 唯一解决方案 WIN+R, 输入regedit,回车 找到 HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ &hellip;">
+  <meta name="description" content="修改hosts是必须的，例如在本地测试我的博客，hosts文件中添加 127.0.0.1 demo.ifffff.com 打开终端，cd /etc/apache2/sites-available 回车 sudo cp default demo.ifffff.com sudo gedit demo. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Fanr.github.io/blog/2013/01/11/fix-Win8-IE10-can-not-open">
+  <link rel="canonical" href="http://Fanr.github.io/blog/2012/04/26/ubuntu-apache-virtualhost-configuration">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="范文斌的博客" type="application/atom+xml">
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">解决Win8 IE10无法打开</h1>
+      <h1 class="entry-title">Ubuntu Apache虚拟主机设置</h1>
     
     
       <p class="meta">
@@ -84,31 +84,42 @@
   
 
 
-<time datetime="2013-01-11T12:25:00+08:00" pubdate data-updated="true">Jan 11<span>th</span>, 2013</time>
+<time datetime="2012-04-26T13:29:00+08:00" pubdate data-updated="true">Apr 26<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>装了一堆常用(根本不用)软件,不知道是哪个,直接导致IE10无法打开,但却可以使用管理员权限打开.</p>
+<div class="entry-content"><p>修改hosts是必须的，例如在本地测试我的博客，hosts文件中添加 127.0.0.1  demo.ifffff.com</p>
 
-<p>卸载重新安装,未果.</p>
+<p>打开终端，cd /etc/apache2/sites-available 回车</p>
+
+<p>sudo cp default demo.ifffff.com</p>
+
+<p>sudo gedit demo.ifffff.com</p>
 
 <!--more-->
 
 
-<p>唯一解决方案</p>
+<p>复制下面的文字到demo.ifffff.com这个文件中，ServerName和DocumentRoot改成你自己的。</p>
 
-<p>WIN+R, 输入regedit,回车</p>
+<p><VirtualHost *:80>
+ServerName demo.ifffff.com
+ServerAdmin <a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#58;&#x61;&#100;&#109;&#105;&#x6e;&#64;&#105;&#102;&#x66;&#102;&#x66;&#102;&#x2e;&#x63;&#x6f;&#109;">&#97;&#x64;&#x6d;&#105;&#x6e;&#64;&#x69;&#102;&#102;&#x66;&#102;&#102;&#46;&#99;&#111;&#x6d;</a>
+DocumentRoot “/var/www/ifffff/”
+ErrorLog “/var/log/apache2/edunuke_errors.log”
+CustomLog “/var/log/apache2/edunuke_accesses.log” common
+</VirtualHost></p>
 
-<p>找到 HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main</p>
+<p>终端输入：
+sudo a2ensite demo.iffff.com 回车</p>
 
-<p>右键Main,选择权限.</p>
+<p>这样的话，虚拟主机站点 demo.ifffff.com 就已经安装好了。这时也可以在 /etc/apache2/sites-enabled/ 目录中发现多了一个到/etc/apache2/sites-available/demo.ifffff.com 的软链接。接下来就是将 Apache2 重启来使虚拟主机站点运行起来：</p>
 
-<p>高级，右下角的“启用继承”按钮即可。</p>
+<p>sudo /etc/init.d/apache2 restart 这里可以使用reload 重新加载</p>
 
-<p>目测只能编辑注册表修正</p>
+<p>访问demo.ifffff.com 一切就妥妥的了～</p>
 </div>
 
 
@@ -131,12 +142,12 @@
   
 
 
-<time datetime="2013-01-11T12:25:00+08:00" pubdate data-updated="true">Jan 11<span>th</span>, 2013</time>
+<time datetime="2012-04-26T13:29:00+08:00" pubdate data-updated="true">Apr 26<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/ie10/'>IE10</a>, <a class='category' href='/blog/categories/windows/'>Windows</a>
+    <a class='category' href='/blog/categories/apache/'>Apache</a>, <a class='category' href='/blog/categories/ubuntu/'>Ubuntu</a>, <a class='category' href='/blog/categories/virtualhost/'>VirtualHost</a>
   
 </span>
 
@@ -175,10 +186,10 @@ var jiathis_config = {data_track_clickback:'true'};
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/11/13/happy-birthday-2012/" title="Previous Post: 祝我生日快乐">&laquo; 祝我生日快乐</a>
+        <a class="basic-alignment left" href="/blog/2012/04/22/ubuntu-php-apache-mysql/" title="Previous Post: Ubuntu搭建PHP+Apache+MySQL环境">&laquo; Ubuntu搭建PHP+Apache+MySQL环境</a>
       
       
-        <a class="basic-alignment right" href="/blog/2013/02/22/windows-auto-login/" title="Next Post: Win8(Windows系列)开机自动登陆系统">Win8(Windows系列)开机自动登陆系统 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2012/05/11/faststone-capture-6-dot-7-serial-number/" title="Next Post: FastStone Capture 6.7 序列号">FastStone Capture 6.7 序列号 &raquo;</a>
       
     </p>
   </footer>
