@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: JavaScript | 范文斌的博客]]></title>
+  <link href="http://fanwenbin.com/categories/javascript/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-06-01T15:58:05+08:00</updated>
+  <id>http://fanwenbin.com/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[最新留言仿微博滚动]]></title>
+    <link href="http://fanwenbin.com/2011/05/12/comments-scroll-microblog/"/>
+    <updated>2011-05-12T15:16:00+08:00</updated>
+    <id>http://fanwenbin.com/2011/05/12/comments-scroll-microblog</id>
+    <content type="html"><![CDATA[<p>近来很多童鞋询问博客右侧的最新评论滚动是怎么实现的，思考了很久，还是先把代码贴出来的说。</p>
+
+<p><img src="/images/2011/05/new_comments.png" alt="效果图" /></p>
+
+<p>需要两步操作：</p>
+
+<ol>
+<li><p>调用出最新评论</p></li>
+<li><p>使用JavaScript对其进行滚动处理</p></li>
+</ol>
+
+
+<!--more-->
+
+
+<h2>开工!</h2>
+
+<h3>1.调出最新评论：见<a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_736558334&amp;rss=1">comments_show.htm</a>文件</h3>
+
+<h3>2.滚动处理：见<a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_736558334&amp;rss=1">comments_show.htm</a>文件</h3>
+
+<h3>3.CSS美化：</h3>
+
+<pre><code>.twit_list_content{width:300px;position:relative;padding:0;margin:5px 0 0 10px;}
+.twit_list_content li{list-style:none;}
+.twit_list_content li img{border:none;}
+.twit_list_content li a{text-decoration:none;color:#323232;font-size:12.5px;}
+</code></pre>
+
+<p>由于代码过长，为了保持页面的整洁以及代码的整洁，请各位童鞋移至<a href="/disk">网盘</a>页面下载或者右键点击上面链接另存为即可。</p>
+
+<p>按照comments_show.htm的提示对代码进行粘贴即可。</p>
+
+<p>需要注意的是代码中15行要修改成你的名字，23行的链接要修改成你的域名才行。</p>
+
+<p>使用过程中遇到什么问题荒淫留言讨论。</p>
+
+<p>注：调用最新评论使用了<a href="http://kan.willin.org/">willin</a>同学的代码。</p>
+]]></content>
+  </entry>
+  
+</feed>

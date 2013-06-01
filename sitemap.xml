@@ -1,16 +1,56 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://fanwenbin.com/2011/04/10/how-to-use-jquery/</loc>
+        <lastmod>2013-06-01T15:55:35+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://fanwenbin.com/2011/04/20/wordpres-get-weibo-rss/</loc>
+        <lastmod>2013-06-01T15:55:44+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://fanwenbin.com/2011/05/11/add-more-smilies-for-wordpres/</loc>
+        <lastmod>2013-06-01T15:41:39+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://fanwenbin.com/2011/05/12/comments-scroll-microblog/</loc>
+        <lastmod>2013-06-01T15:56:14+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://fanwenbin.com/2011/05/15/jquery-show-loading/</loc>
+        <lastmod>2013-06-01T15:56:26+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://fanwenbin.com/2011/06/14/new-time-show/</loc>
+        <lastmod>2013-06-01T15:43:52+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://fanwenbin.com/2011/12/27/the-moment-that-could-not-last/</loc>
+        <lastmod>2013-06-01T15:45:49+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://fanwenbin.com/2012/02/27/goodbye-jin-hua-station/</loc>
+        <lastmod>2013-06-01T15:56:48+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://fanwenbin.com/2012/03/11/extract-ipa-images/</loc>
+        <lastmod>2013-06-01T15:40:35+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://fanwenbin.com/2012/03/20/enabled-new-domain-ifffff-com/</loc>
+        <lastmod>2013-06-01T15:42:54+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://fanwenbin.com/2012/04/10/ie6-position-fixed/</loc>
+        <lastmod>2013-06-01T15:42:34+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://fanwenbin.com/2012/04/22/ubuntu-php-apache-mysql/</loc>
-        <lastmod>2013-05-18T13:42:28+08:00</lastmod>
+        <lastmod>2013-06-01T15:54:00+08:00</lastmod>
     </url>
     <url>
         <loc>http://fanwenbin.com/2012/04/26/ubuntu-apache-virtualhost-configuration/</loc>
-        <lastmod>2013-05-18T13:40:03+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://fanwenbin.com/2012/05/11/faststone-capture-6-dot-7-serial-number/</loc>
-        <lastmod>2013-05-18T13:40:41+08:00</lastmod>
+        <lastmod>2013-06-01T15:51:29+08:00</lastmod>
     </url>
     <url>
         <loc>http://fanwenbin.com/2012/06/01/google-china-search-guide/</loc>
@@ -38,7 +78,7 @@
     </url>
     <url>
         <loc>http://fanwenbin.com/2013/04/23/clean-up-recycle-bin/</loc>
-        <lastmod>2013-05-18T13:06:01+08:00</lastmod>
+        <lastmod>2013-06-01T15:49:40+08:00</lastmod>
     </url>
     <url>
         <loc>http://fanwenbin.com/2013/06/01/markdown-editor-commend/</loc>
@@ -46,11 +86,11 @@
     </url>
     <url>
         <loc>http://fanwenbin.com/archives/</loc>
-        <lastmod>2013-06-01T12:29:50+08:00</lastmod>
+        <lastmod>2013-06-01T15:56:48+08:00</lastmod>
     </url>
     <url>
         <loc>http://fanwenbin.com/</loc>
-        <lastmod>2013-06-01T12:29:50+08:00</lastmod>
+        <lastmod>2013-06-01T15:56:48+08:00</lastmod>
     </url>
     <url>
         <loc>http://fanwenbin.com/robots.txt</loc>

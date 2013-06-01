@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ipa | 范文斌的博客]]></title>
+  <link href="http://fanwenbin.com/categories/ipa/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-06-01T15:58:05+08:00</updated>
+  <id>http://fanwenbin.com/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[提取ipa应用程序图片]]></title>
+    <link href="http://fanwenbin.com/2012/03/11/extract-ipa-images/"/>
+    <updated>2012-03-11T14:01:00+08:00</updated>
+    <id>http://fanwenbin.com/2012/03/11/extract-ipa-images</id>
+    <content type="html"><![CDATA[<p>前一阵子看到<a href="http://path.com">Path</a>的背景蛮不错，使用 <a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_1776356550&amp;rss=1">fixpngWindows</a> 搞了出来。</p>
+
+<p>解压后将图片放入png文件夹，打开fixpng.exe，运行程序直至结束。</p>
+
+<p>修复好的图片在<code>fixed</code>文件夹内，时间稍长，需耐心等待。</p>
+
+<p>至于怎么获取图片，当然是直接解压ipa文件。</p>
+
+<p>传送：<a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_1776356550&amp;rss=1">fixpngWindows</a>（右键另存）</p>
+]]></content>
+  </entry>
+  
+</feed>

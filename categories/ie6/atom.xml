@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: IE6 | 范文斌的博客]]></title>
+  <link href="http://fanwenbin.com/categories/ie6/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-06-01T15:58:05+08:00</updated>
+  <id>http://fanwenbin.com/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[IE6修正position:fixed问题]]></title>
+    <link href="http://fanwenbin.com/2012/04/10/ie6-position-fixed/"/>
+    <updated>2012-04-10T13:45:00+08:00</updated>
+    <id>http://fanwenbin.com/2012/04/10/ie6-position-fixed</id>
+    <content type="html"><![CDATA[<h2>STEP 1</h2>
+
+<p>加入如下代码：</p>
+
+<pre><code>html { 
+    _background-image: url(about:blank); 
+    _background-attachment: fixed; /* prevent screen flash in IE6 */ 
+}
+</code></pre>
+
+<p><code>_background-attachment:fixed;</code>是用来修正IE6下区块突发癫痫病的问题[滚动时图片闪烁问题]</p>
+
+<!--more-->
+
+
+<h2>STEP 2</h2>
+
+<p>如下代码用于需要position:fixed的元素</p>
+
+<pre><code>_position: absolute; 
+_bottom: auto; 
+_clear: both; 
+_top:expression(eval(document.compatMode &amp;&amp; document.compatMode=='CSS1Compat') ? documentElement.scrollTop +(documentElement.clientHeight-this.clientHeight) - 1 : document.body.scrollTop +(document.body.clientHeight-this.clientHeight) - 1);
+</code></pre>
+
+<p>木有demo神马的…</p>
+]]></content>
+  </entry>
+  
+</feed>

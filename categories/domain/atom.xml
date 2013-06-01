@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Domain | 范文斌的博客]]></title>
+  <link href="http://fanwenbin.com/categories/domain/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-06-01T15:58:05+08:00</updated>
+  <id>http://fanwenbin.com/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[启用新域名ifffff.com]]></title>
+    <link href="http://fanwenbin.com/2012/03/20/enabled-new-domain-ifffff-com/"/>
+    <updated>2012-03-20T13:55:00+08:00</updated>
+    <id>http://fanwenbin.com/2012/03/20/enabled-new-domain-ifffff-com</id>
+    <content type="html"><![CDATA[<p>转眼折腾了2年WP了，也算小有收获。</p>
+
+<p>前些日子于无聊蛋疼之中注册了ifffff.com，别数了，5个F，注册此域名也是为了呼应 <a href="http://izzzzz.com/">@曾哥</a> 和 <a href="http://immmmm.com/">@木木老湿</a>（躺着中枪），免得他们在浩瀚的互联网之中过分寂寞，com是王道啊，哈哈。</p>
+
+<!--more-->
+
+
+<h2>SETP 1</h2>
+
+<p>搬家可谓是一个费事耗力的工作，最关键的就是下面的几条SQL语句了：</p>
+
+<pre><code>UPDATE wp_options SET option_value = REPLACE(option_value, 'old.com', 'new.com') WHERE option_name = 'home' OR option_name = 'siteurl';
+UPDATE wp_posts SET guid = REPLACE(guid, 'old.com','new.com');
+UPDATE wp_posts SET post_content = REPLACE(post_content, 'old.com', 'new.com');
+</code></pre>
+
+<h2>SETP 2</h2>
+
+<p>在原来的域名根目录做个301</p>
+
+<pre><code>RewriteEngine ON
+RewriteCond %{http_host} ^ifffff.com [NC]
+RewriteRule ^(.*)$ http://ifffff.com/$1 [L,R=301]
+</code></pre>
+
+<p>搞定，走起！</p>
+]]></content>
+  </entry>
+  
+</feed>

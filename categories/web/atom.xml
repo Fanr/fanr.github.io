@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Web | 范文斌的博客]]></title>
   <link href="http://fanwenbin.com/categories/web/atom.xml" rel="self"/>
   <link href="http://fanwenbin.com/"/>
-  <updated>2013-06-01T12:32:12+08:00</updated>
+  <updated>2013-06-01T15:58:05+08:00</updated>
   <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
@@ -18,35 +18,48 @@
     <link href="http://fanwenbin.com/2012/04/22/ubuntu-php-apache-mysql/"/>
     <updated>2012-04-22T13:33:00+08:00</updated>
     <id>http://fanwenbin.com/2012/04/22/ubuntu-php-apache-mysql</id>
-    <content type="html"><![CDATA[<p>安装Apache2</p>
+    <content type="html"><![CDATA[<h3>安装Apache2</h3>
 
-<p>打开终端，输入“sudo apt-get install apache2”，回车;（安装apache2.0）
+<p>打开终端，输入“<code>sudo apt-get install apache2</code>”，回车;（安装apache2.0）
 有密码输入密码，回车
 输入“Y”，回车
 apache2.0安装完成
-验证apache2.0安装是否完成，在浏览器中打开<a href="http://localhost/%E6%88%96%E8%80%85http://127.0.0.1%EF%BC%8C%E5%87%BA%E7%8E%B0It">http://localhost/%E6%88%96%E8%80%85http://127.0.0.1%EF%BC%8C%E5%87%BA%E7%8E%B0It</a> works!证明成功;</p>
+验证apache2.0安装是否完成，在浏览器中打开<code>http://localhost/</code>或者<code>http://127.0.0.1</code>，出现It works!证明成功;</p>
 
 <!--more-->
 
 
-<p>安装PHP5</p>
+<h3>安装PHP5</h3>
 
-<p>打开终端，输入“sudo apt-get install php5”，回车;（此为安装PHP）
-输入“Y”，回车;
-输入“sudo apt-get install libapache2-mod-php5”，回车;（此为配置APACHE+PHP）
-输入“sudo /etc/init.d/apache2 restart”，回车;（此为重启APACHE）
-输入“gksudo gedit /var/www/index.php”，回车;（此为测试PHP的安装结果）
-然后输入
-在浏览器中输入<a href="http://127.0.0.1/index.php%E6%88%96%E8%80%85http://localhost/index.php%EF%BC%8C%E5%87%BAPHPINFO%E8%AF%81%E6%98%8E%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F;">http://127.0.0.1/index.php%E6%88%96%E8%80%85http://localhost/index.php%EF%BC%8C%E5%87%BAPHPINFO%E8%AF%81%E6%98%8E%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F;</a>
-安装MySQL</p>
+<p>打开终端，输入“<code>sudo apt-get install php5</code>”，回车;（此为安装PHP）</p>
 
-<p>在终端输入“sudo apt-get install mysql-server”，回车;（此为安装MYSQL）
-输入“Y”，回车;
-设置root密码;
-在终端中输入“sudo apt-get install libapache2-mod-auth-mysql”，回车;（此为让apache、php支持 mysql）
-在终端输入“sudo apt-get install php5-mysql”，回车;
-在终端输入“sudo /etc/init.d/apache2 restart”，回车;
-大功告成，继续折腾。</p>
+<p>输入“Y”，回车;</p>
+
+<p>输入“<code>sudo apt-get install libapache2-mod-php5</code>”，回车;（此为配置APACHE+PHP）</p>
+
+<p>输入“<code>sudo /etc/init.d/apache2 restart</code>”，回车;（此为重启APACHE）</p>
+
+<p>输入“<code>gksudo gedit /var/www/index.php</code>”，回车;（此为测试PHP的安装结果）</p>
+
+<p>然后输入</p>
+
+<p>在浏览器中输入<code>http://127.0.0.1/index.php</code>或者<code>http://localhost/index.php</code>，出PHPINFO证明安装成功;</p>
+
+<h3>安装MySQL</h3>
+
+<p>在终端输入“<code>sudo apt-get install mysql-server</code>”，回车;（此为安装MYSQL）</p>
+
+<p>输入“Y”，回车;</p>
+
+<p>设置root密码;</p>
+
+<p>在终端中输入“<code>sudo apt-get install libapache2-mod-auth-mysql</code>”，回车;（此为让apache、php支持 mysql）</p>
+
+<p>在终端输入“<code>sudo apt-get install php5-mysql</code>”，回车;</p>
+
+<p>在终端输入“<code>sudo /etc/init.d/apache2 restart</code>”，回车;</p>
+
+<p>大功告成，继续折腾。</p>
 ]]></content>
   </entry>
   

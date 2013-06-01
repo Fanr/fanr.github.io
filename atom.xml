@@ -4,7 +4,7 @@
   <title><![CDATA[范文斌的博客]]></title>
   <link href="http://fanwenbin.com/atom.xml" rel="self"/>
   <link href="http://fanwenbin.com/"/>
-  <updated>2013-06-01T12:32:12+08:00</updated>
+  <updated>2013-06-01T15:58:05+08:00</updated>
   <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
@@ -63,13 +63,14 @@
 <!--more-->
 
 
-<p>sudo -s</p>
+<pre><code>sudo -s
 
-<p>cd .Trash</p>
+cd .Trash
 
-<p>rm -rf *</p>
+rm -rf *
 
-<p>exit</p>
+exit
+</code></pre>
 
 <p>搞定，收工。</p>
 ]]></content>
@@ -264,48 +265,39 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[FastStone Capture 6.7 序列号]]></title>
-    <link href="http://fanwenbin.com/2012/05/11/faststone-capture-6-dot-7-serial-number/"/>
-    <updated>2012-05-11T13:27:00+08:00</updated>
-    <id>http://fanwenbin.com/2012/05/11/faststone-capture-6-dot-7-serial-number</id>
-    <content type="html"><![CDATA[<p>name：bluman serial</p>
-
-<p>序列号/注册码：VPISCJULXUFGDDXYAUYF</p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Ubuntu Apache虚拟主机设置]]></title>
     <link href="http://fanwenbin.com/2012/04/26/ubuntu-apache-virtualhost-configuration/"/>
     <updated>2012-04-26T13:29:00+08:00</updated>
     <id>http://fanwenbin.com/2012/04/26/ubuntu-apache-virtualhost-configuration</id>
     <content type="html"><![CDATA[<p>修改hosts是必须的，例如在本地测试我的博客，hosts文件中添加 127.0.0.1  demo.ifffff.com</p>
 
-<p>打开终端，cd /etc/apache2/sites-available 回车</p>
+<p>打开终端，<code>cd /etc/apache2/sites-available</code> 回车</p>
 
-<p>sudo cp default demo.ifffff.com</p>
+<pre><code>sudo cp default demo.ifffff.com
 
-<p>sudo gedit demo.ifffff.com</p>
+sudo gedit demo.ifffff.com
+</code></pre>
 
 <!--more-->
 
 
 <p>复制下面的文字到demo.ifffff.com这个文件中，ServerName和DocumentRoot改成你自己的。</p>
 
-<p><VirtualHost *:80>
+<pre><code>&lt;VirtualHost *:80&gt;
 ServerName demo.ifffff.com
-ServerAdmin <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#x64;&#109;&#x69;&#110;&#64;&#x69;&#x66;&#102;&#x66;&#102;&#102;&#46;&#x63;&#x6f;&#109;">&#x61;&#x64;&#109;&#105;&#110;&#x40;&#x69;&#102;&#x66;&#x66;&#102;&#x66;&#x2e;&#x63;&#x6f;&#x6d;</a>
+ServerAdmin admin@ifffff.com
 DocumentRoot “/var/www/ifffff/”
 ErrorLog “/var/log/apache2/edunuke_errors.log”
 CustomLog “/var/log/apache2/edunuke_accesses.log” common
-</VirtualHost></p>
+&lt;/VirtualHost&gt;
+</code></pre>
 
 <p>终端输入：
-sudo a2ensite demo.iffff.com 回车</p>
+<code>sudo a2ensite demo.iffff.com</code> 回车</p>
 
-<p>这样的话，虚拟主机站点 demo.ifffff.com 就已经安装好了。这时也可以在 /etc/apache2/sites-enabled/ 目录中发现多了一个到/etc/apache2/sites-available/demo.ifffff.com 的软链接。接下来就是将 Apache2 重启来使虚拟主机站点运行起来：</p>
+<p>这样的话，虚拟主机站点 demo.ifffff.com 就已经安装好了。这时也可以在 <code>/etc/apache2/sites-enabled/</code> 目录中发现多了一个到<code>/etc/apache2/sites-available/demo.ifffff.com</code> 的软链接。接下来就是将 Apache2 重启来使虚拟主机站点运行起来：</p>
 
-<p>sudo /etc/init.d/apache2 restart 这里可以使用reload 重新加载</p>
+<p><code>sudo /etc/init.d/apache2 restart</code> 这里可以使用reload 重新加载</p>
 
 <p>访问demo.ifffff.com 一切就妥妥的了～</p>
 ]]></content>
@@ -316,35 +308,569 @@ sudo a2ensite demo.iffff.com 回车</p>
     <link href="http://fanwenbin.com/2012/04/22/ubuntu-php-apache-mysql/"/>
     <updated>2012-04-22T13:33:00+08:00</updated>
     <id>http://fanwenbin.com/2012/04/22/ubuntu-php-apache-mysql</id>
-    <content type="html"><![CDATA[<p>安装Apache2</p>
+    <content type="html"><![CDATA[<h3>安装Apache2</h3>
 
-<p>打开终端，输入“sudo apt-get install apache2”，回车;（安装apache2.0）
+<p>打开终端，输入“<code>sudo apt-get install apache2</code>”，回车;（安装apache2.0）
 有密码输入密码，回车
 输入“Y”，回车
 apache2.0安装完成
-验证apache2.0安装是否完成，在浏览器中打开<a href="http://localhost/%E6%88%96%E8%80%85http://127.0.0.1%EF%BC%8C%E5%87%BA%E7%8E%B0It">http://localhost/%E6%88%96%E8%80%85http://127.0.0.1%EF%BC%8C%E5%87%BA%E7%8E%B0It</a> works!证明成功;</p>
+验证apache2.0安装是否完成，在浏览器中打开<code>http://localhost/</code>或者<code>http://127.0.0.1</code>，出现It works!证明成功;</p>
 
 <!--more-->
 
 
-<p>安装PHP5</p>
+<h3>安装PHP5</h3>
 
-<p>打开终端，输入“sudo apt-get install php5”，回车;（此为安装PHP）
-输入“Y”，回车;
-输入“sudo apt-get install libapache2-mod-php5”，回车;（此为配置APACHE+PHP）
-输入“sudo /etc/init.d/apache2 restart”，回车;（此为重启APACHE）
-输入“gksudo gedit /var/www/index.php”，回车;（此为测试PHP的安装结果）
-然后输入
-在浏览器中输入<a href="http://127.0.0.1/index.php%E6%88%96%E8%80%85http://localhost/index.php%EF%BC%8C%E5%87%BAPHPINFO%E8%AF%81%E6%98%8E%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F;">http://127.0.0.1/index.php%E6%88%96%E8%80%85http://localhost/index.php%EF%BC%8C%E5%87%BAPHPINFO%E8%AF%81%E6%98%8E%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F;</a>
-安装MySQL</p>
+<p>打开终端，输入“<code>sudo apt-get install php5</code>”，回车;（此为安装PHP）</p>
 
-<p>在终端输入“sudo apt-get install mysql-server”，回车;（此为安装MYSQL）
-输入“Y”，回车;
-设置root密码;
-在终端中输入“sudo apt-get install libapache2-mod-auth-mysql”，回车;（此为让apache、php支持 mysql）
-在终端输入“sudo apt-get install php5-mysql”，回车;
-在终端输入“sudo /etc/init.d/apache2 restart”，回车;
-大功告成，继续折腾。</p>
+<p>输入“Y”，回车;</p>
+
+<p>输入“<code>sudo apt-get install libapache2-mod-php5</code>”，回车;（此为配置APACHE+PHP）</p>
+
+<p>输入“<code>sudo /etc/init.d/apache2 restart</code>”，回车;（此为重启APACHE）</p>
+
+<p>输入“<code>gksudo gedit /var/www/index.php</code>”，回车;（此为测试PHP的安装结果）</p>
+
+<p>然后输入</p>
+
+<p>在浏览器中输入<code>http://127.0.0.1/index.php</code>或者<code>http://localhost/index.php</code>，出PHPINFO证明安装成功;</p>
+
+<h3>安装MySQL</h3>
+
+<p>在终端输入“<code>sudo apt-get install mysql-server</code>”，回车;（此为安装MYSQL）</p>
+
+<p>输入“Y”，回车;</p>
+
+<p>设置root密码;</p>
+
+<p>在终端中输入“<code>sudo apt-get install libapache2-mod-auth-mysql</code>”，回车;（此为让apache、php支持 mysql）</p>
+
+<p>在终端输入“<code>sudo apt-get install php5-mysql</code>”，回车;</p>
+
+<p>在终端输入“<code>sudo /etc/init.d/apache2 restart</code>”，回车;</p>
+
+<p>大功告成，继续折腾。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[IE6修正position:fixed问题]]></title>
+    <link href="http://fanwenbin.com/2012/04/10/ie6-position-fixed/"/>
+    <updated>2012-04-10T13:45:00+08:00</updated>
+    <id>http://fanwenbin.com/2012/04/10/ie6-position-fixed</id>
+    <content type="html"><![CDATA[<h2>STEP 1</h2>
+
+<p>加入如下代码：</p>
+
+<pre><code>html { 
+    _background-image: url(about:blank); 
+    _background-attachment: fixed; /* prevent screen flash in IE6 */ 
+}
+</code></pre>
+
+<p><code>_background-attachment:fixed;</code>是用来修正IE6下区块突发癫痫病的问题[滚动时图片闪烁问题]</p>
+
+<!--more-->
+
+
+<h2>STEP 2</h2>
+
+<p>如下代码用于需要position:fixed的元素</p>
+
+<pre><code>_position: absolute; 
+_bottom: auto; 
+_clear: both; 
+_top:expression(eval(document.compatMode &amp;&amp; document.compatMode=='CSS1Compat') ? documentElement.scrollTop +(documentElement.clientHeight-this.clientHeight) - 1 : document.body.scrollTop +(document.body.clientHeight-this.clientHeight) - 1);
+</code></pre>
+
+<p>木有demo神马的…</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[启用新域名ifffff.com]]></title>
+    <link href="http://fanwenbin.com/2012/03/20/enabled-new-domain-ifffff-com/"/>
+    <updated>2012-03-20T13:55:00+08:00</updated>
+    <id>http://fanwenbin.com/2012/03/20/enabled-new-domain-ifffff-com</id>
+    <content type="html"><![CDATA[<p>转眼折腾了2年WP了，也算小有收获。</p>
+
+<p>前些日子于无聊蛋疼之中注册了ifffff.com，别数了，5个F，注册此域名也是为了呼应 <a href="http://izzzzz.com/">@曾哥</a> 和 <a href="http://immmmm.com/">@木木老湿</a>（躺着中枪），免得他们在浩瀚的互联网之中过分寂寞，com是王道啊，哈哈。</p>
+
+<!--more-->
+
+
+<h2>SETP 1</h2>
+
+<p>搬家可谓是一个费事耗力的工作，最关键的就是下面的几条SQL语句了：</p>
+
+<pre><code>UPDATE wp_options SET option_value = REPLACE(option_value, 'old.com', 'new.com') WHERE option_name = 'home' OR option_name = 'siteurl';
+UPDATE wp_posts SET guid = REPLACE(guid, 'old.com','new.com');
+UPDATE wp_posts SET post_content = REPLACE(post_content, 'old.com', 'new.com');
+</code></pre>
+
+<h2>SETP 2</h2>
+
+<p>在原来的域名根目录做个301</p>
+
+<pre><code>RewriteEngine ON
+RewriteCond %{http_host} ^ifffff.com [NC]
+RewriteRule ^(.*)$ http://ifffff.com/$1 [L,R=301]
+</code></pre>
+
+<p>搞定，走起！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[提取ipa应用程序图片]]></title>
+    <link href="http://fanwenbin.com/2012/03/11/extract-ipa-images/"/>
+    <updated>2012-03-11T14:01:00+08:00</updated>
+    <id>http://fanwenbin.com/2012/03/11/extract-ipa-images</id>
+    <content type="html"><![CDATA[<p>前一阵子看到<a href="http://path.com">Path</a>的背景蛮不错，使用 <a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_1776356550&amp;rss=1">fixpngWindows</a> 搞了出来。</p>
+
+<p>解压后将图片放入png文件夹，打开fixpng.exe，运行程序直至结束。</p>
+
+<p>修复好的图片在<code>fixed</code>文件夹内，时间稍长，需耐心等待。</p>
+
+<p>至于怎么获取图片，当然是直接解压ipa文件。</p>
+
+<p>传送：<a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_1776356550&amp;rss=1">fixpngWindows</a>（右键另存）</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[再见金华站]]></title>
+    <link href="http://fanwenbin.com/2012/02/27/goodbye-jin-hua-station/"/>
+    <updated>2012-02-27T14:07:00+08:00</updated>
+    <id>http://fanwenbin.com/2012/02/27/goodbye-jin-hua-station</id>
+    <content type="html"><![CDATA[<p><img src="http://fanwenbin.com/images/2012/02/1.jpg" alt="JinHua Station" /></p>
+
+<p>两天前在<a href="http://weibo.com/glauca">@glauca</a>的推荐下看了此片，应该是继《老男孩》之后又一部能搅动人内心的短片了。</p>
+
+<p>直到今日，依旧在回味这不片子，被勾起的太多过往，依稀可见。</p>
+
+<!--more-->
+
+
+<h2>概述</h2>
+
+<h3>小诗</h3>
+
+<blockquote><p>这是个喧嚣的世界</p>
+
+<p>我从未觉得安静过</p>
+
+<p>他的繁荣 他的昌盛带给人们却只是更多的疲惫 更多的抱怨</p>
+
+<p>于是我捂住双耳</p>
+
+<p>不去听他的疲惫 不去听他的昌盛 不去听他的繁荣 也不去听他的抱怨</p>
+
+<p>于是我以为我的世界安静了</p>
+
+<p>只是这世上总有那么一人哪怕她不曾对我讲过一言一语 但我却听得到她的声音</p>
+
+<hr />
+
+<p>This is a noisy world.</p>
+
+<p>I never felt even a little silence.</p>
+
+<p>In spite of its prosperity</p>
+
+<p>There’s too much more tired and more complaints which brought by the prosperity.</p>
+
+<p>So covered my ears.</p>
+
+<p>Do not listen to its tired, prosperity and complaints as well.</p>
+
+<p>So I thought that my world became quiet.</p>
+
+<p>But there is a person in the world.</p>
+
+<p>Who never told me about a piece of word, but I do able to hear her voice.</p></blockquote>
+
+<h2>简介</h2>
+
+<p>片中的一首诗，导演老毕在恰当的时候配上恰当的背景，极具感染力！</p>
+
+<p>故事的内容就不重复了，可以到<a href="http://baike.baidu.com/view/6434580.htm">这里</a>详细研究。</p>
+
+<p>反复看了几遍，写下此文，多半是因为小方子要离开的缘故吧。</p>
+
+<p>《再见金华站》没有《老男孩》拍摄的细致，但却极大程度的再现了高中时代的种种成长经历，发现个穿帮镜头，可以留意一下里面妹纸的围巾。</p>
+
+<p>昨个还不停和小方子念叨这部片子，找不到原声，这家伙有，果断收藏之。</p>
+
+<h2>视频</h2>
+
+<p>优酷：<a href="http://v.youku.com/v_show/id_XMzUwMDY5MDgw.html">再见金华站</a></p>
+
+<p><embed src="http://player.youku.com/player.php/sid/XMjc4ODc1MDA4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></p>
+
+<h2>原声资源</h2>
+
+<p>原声：（右键另存为）</p>
+
+<ol>
+<li><p><a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=xyzuubnx5p&amp;file_id=f_1665606384&amp;rss=1">再见金华站原声.part1</a></p></li>
+<li><p><a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=xyzuubnx5p&amp;file_id=f_1665671012&amp;rss=1">再见金华站原声.part2</a></p></li>
+<li><p><a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=xyzuubnx5p&amp;file_id=f_1665710152&amp;rss=1">再见金华站原声.part3</a></p></li>
+</ol>
+
+
+<p>视频资料：（右键另存为）</p>
+
+<ol>
+<li><p><a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=xyzuubnx5p&amp;file_id=f_1665824592&amp;rss=1">再见金华站.part1.rar</a></p></li>
+<li><p><a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=xyzuubnx5p&amp;file_id=f_1665933604&amp;rss=1">再见金华站.part2.rar</a></p></li>
+</ol>
+
+
+<p>亦可去<a href="http://fanwenbin.com/disk">网盘</a>页面寻找</p>
+
+<h2>更多</h2>
+
+<ul>
+<li><p>导演：毕鑫业  <a href="http://www.renren.com/256044472">人人</a>   <a href="http://weibo.com/bixinye">微博</a></p></li>
+<li><p>男主角：张师  <a href="http://www.renren.com/251819704">人人</a></p></li>
+<li><p>女主角：王羽西  （妹纸不错）</p></li>
+<li><p>观众(哥滴)：<a href="http://weibo.com/fanr001">微博</a>  <a href="http://t.qq.com/fanr001">腾讯</a>   fo一下，生活更美好！</p></li>
+<li><p>毕鑫业的<a href="http://v.youku.com/v_show/id_XMzUwMDY5MDgw.html">视频</a>。</p></li>
+</ul>
+
+
+<h2>结束语</h2>
+
+<p>都是大学生，人家能拍出300W点击的短片，我却在码代码，差距，差距啊！！！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Moment That Could Not Last]]></title>
+    <link href="http://fanwenbin.com/2011/12/27/the-moment-that-could-not-last/"/>
+    <updated>2011-12-27T14:29:00+08:00</updated>
+    <id>http://fanwenbin.com/2011/12/27/the-moment-that-could-not-last</id>
+    <content type="html"><![CDATA[<blockquote><p>The Moment That Could Not Last</p>
+
+<p>那一刻不能永远留下</p></blockquote>
+
+<p><img src="http://fanwenbin.com/images/2011/12/The-Monent-That-Cloud-Not-Last.jpg" alt="布拉德皮特" /></p>
+
+<!--more-->
+
+
+<p>听歌先。</p>
+
+<object width="257" height="33" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://www.xiami.com/widget/1981609_1786266/singlePlayer.swf" /><param name="wmode" value="transparent" /><embed width="257" height="33" type="application/x-shockwave-flash" src="http://www.xiami.com/widget/1981609_1786266/singlePlayer.swf" wmode="transparent" /></object>
+
+
+<p>昨个看完了<a href="http://weibo.com/glauca">Glauca</a>推荐的<code>《大河恋》</code>，老片子，有布拉德皮特。</p>
+
+<p>故事有点老，不过还是非常值得一看，强烈推荐！</p>
+
+<p>有些怀念以前一起共事的日子，怀念猛仔，各种思念。。。 </p>
+
+<p>祝大家都工作顺利吧！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[全新的相对时间显示]]></title>
+    <link href="http://fanwenbin.com/2011/06/14/new-time-show/"/>
+    <updated>2011-06-14T14:34:00+08:00</updated>
+    <id>http://fanwenbin.com/2011/06/14/new-time-show</id>
+    <content type="html"><![CDATA[<p>先上Twitter的显示效果：</p>
+
+<p><img src="http://fanwenbin.com/images/2011/06/new_timediff1.jpg" alt="Twitter效果" /></p>
+
+<p>要简洁，更要清爽！国外的产品用户体验不一般，不是我崇洋媚外，这和我们当前的工作形势有关，国外开放，而国内，严格，拘谨，一个小官就能嚎嚎个没完。</p>
+
+<!--more-->
+
+
+<p><img src="http://fanwenbin.com/images/2011/06/new_timediff2.jpg" alt="修改后" /></p>
+
+<p>修改后的效果</p>
+
+<p><img src="http://fanwenbin.com/images/2011/06/new_timediff3.jpg" alt="30天后的效果" /></p>
+
+<p>超出30天后</p>
+
+<p>之前询问过<a href="http://weibo.com/1463713805">@天涯</a> 关于显示相对时间的问题，天涯老师给出了解决思路，幸好只说了一点，要不也不会折腾出<a href="http://fanwenbin.com/comments-scroll-microblog/">这篇</a></p>
+
+<p>将如下代码抛入functions.php中</p>
+
+<pre><code>/* Time Ago by FANWENBIN */
+function time_ago( $type = 'commennt', $day = 30 ) {
+$d = $type == 'post' ? 'get_post_time' : 'get_comment_time';
+$timediff = time() - $d('U');
+
+/*Show Time Diff*/
+if ($timediff &lt;= 60*60*24*$day){
+echo  human_time_diff($d('U'), strtotime(current_time('mysql', 0))), '前';
+}
+
+/*Show Datetime*/
+if ($timediff &gt; 60*60*24*$day){
+echo  date('M-d',get_comment_date('U')), ' ', get_comment_time('H:i');
+};
+}
+</code></pre>
+
+<p><code>echo  date(‘M-d’,get_comment_date(‘U’))</code> 这句是用来格式化取得的时间，月份是英文显示，</p>
+
+<p>例如：May-01 参见于<a href="http://wange.im/localized-format-time-in-wordpress.html">@万戈</a>，顺便说一下<a href="http://wange.im/wordpress-time-diff-in-posts-and-comments.html">@万戈</a>这篇文章可以这么来。</p>
+
+<p><code>human_time_diff()</code></p>
+
+<p>WP内建函数，用来判断两个时间标记的差异。</p>
+
+<p>以人类可阅读的格式，如“1小时”、“5分钟”、“两天”，返回时间标记的差异。</p>
+
+<p>因为中文版的WP进行了本地化处理，所有的英文都会被自动转化成中文，而修改wp-config.php文件中语言选项define (‘WPLANG’,&lsquo;zh_CN’); 为define (‘WPLANG’,”);时，会导致所有没有被手动更改的文字全部显示为英文，So,只能这么BT的来。</p>
+
+<p>接着，在要显示的地方使用代码 <code>@&lt;?php echo time_ago(); ?&gt;</code> 显示的调用一下下即可。</p>
+
+<p>没有折腾的赶紧，咱得做国际范儿。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[jQuery显示网页加载进度]]></title>
+    <link href="http://fanwenbin.com/2011/05/15/jquery-show-loading/"/>
+    <updated>2011-05-15T14:56:00+08:00</updated>
+    <id>http://fanwenbin.com/2011/05/15/jquery-show-loading</id>
+    <content type="html"><![CDATA[<p>近来发现整什么都想和jQuery靠点边，没办法啊没办法。</p>
+
+<p>前天<a href="http://izzzzz.com/">@曾哥</a>看到ZWW的这效果，非要我搞出来，这熊孩子。</p>
+
+<p>开始之前我们需要了解Wordpress模板的加载顺序，如图：</p>
+
+<p><img src="http://fanwenbin.com/images/2011/05/page_loading.gif" alt="原理图" /></p>
+
+<p>其次，就是要在适当的位置插入jQuery脚本了。</p>
+
+<!--more-->
+
+
+<h2>一、引入jQuery</h2>
+
+<p>玩jQuery神马的必须的，不明白的看<a href="http://fanwenbin.com/how-to-use-jquery/">这里</a></p>
+
+<h2>二、jQuery代码</h2>
+
+<pre><code>&lt;script type="text/javascript"&gt;
+    jQuery(window).load(function(){
+        $("#page_loading_show").animate({width:"100%"},function(){
+            setTimeout(function(){
+                $("#page_loading").animate({opacity:'toggle'},800);},800);
+        });
+    }); 
+&lt;/script&gt;
+</code></pre>
+
+<h3>1.在要显示页面加载进入的地方放入下面代码：</h3>
+
+<pre><code>&lt;div id="page_loading"&gt;
+    &lt;div style="width: 0%;display: none;" id="page_loading_show"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>2.根据上图，分别在各页面适当的位置加入以下代码：</h3>
+
+<pre><code>&lt;script type=”text/javascript”&gt;
+    $(“#page_loading_show”).animate({width:”10%”});
+&lt;/script&gt;
+</code></pre>
+
+<p>其中的10%就是要修改的内容，20%，30% …   你懂的</p>
+
+<h2>三、CSS相关</h2>
+
+<pre><code>#page_loading{position:absolute;left:0;width:100%;height:7px;}
+#page_loading_show{display:none;height:1px;background:#d54e21;}
+</code></pre>
+
+<p>DEMO页有悄悄下载2副图片的说。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[最新留言仿微博滚动]]></title>
+    <link href="http://fanwenbin.com/2011/05/12/comments-scroll-microblog/"/>
+    <updated>2011-05-12T15:16:00+08:00</updated>
+    <id>http://fanwenbin.com/2011/05/12/comments-scroll-microblog</id>
+    <content type="html"><![CDATA[<p>近来很多童鞋询问博客右侧的最新评论滚动是怎么实现的，思考了很久，还是先把代码贴出来的说。</p>
+
+<p><img src="http://fanwenbin.com/images/2011/05/new_comments.png" alt="效果图" /></p>
+
+<p>需要两步操作：</p>
+
+<ol>
+<li><p>调用出最新评论</p></li>
+<li><p>使用JavaScript对其进行滚动处理</p></li>
+</ol>
+
+
+<!--more-->
+
+
+<h2>开工!</h2>
+
+<h3>1.调出最新评论：见<a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_736558334&amp;rss=1">comments_show.htm</a>文件</h3>
+
+<h3>2.滚动处理：见<a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_736558334&amp;rss=1">comments_show.htm</a>文件</h3>
+
+<h3>3.CSS美化：</h3>
+
+<pre><code>.twit_list_content{width:300px;position:relative;padding:0;margin:5px 0 0 10px;}
+.twit_list_content li{list-style:none;}
+.twit_list_content li img{border:none;}
+.twit_list_content li a{text-decoration:none;color:#323232;font-size:12.5px;}
+</code></pre>
+
+<p>由于代码过长，为了保持页面的整洁以及代码的整洁，请各位童鞋移至<a href="http://fanwenbin.com/disk">网盘</a>页面下载或者右键点击上面链接另存为即可。</p>
+
+<p>按照comments_show.htm的提示对代码进行粘贴即可。</p>
+
+<p>需要注意的是代码中15行要修改成你的名字，23行的链接要修改成你的域名才行。</p>
+
+<p>使用过程中遇到什么问题荒淫留言讨论。</p>
+
+<p>注：调用最新评论使用了<a href="http://kan.willin.org/">willin</a>同学的代码。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[为Wordpres添加更多表情]]></title>
+    <link href="http://fanwenbin.com/2011/05/11/add-more-smilies-for-wordpres/"/>
+    <updated>2011-05-11T15:21:00+08:00</updated>
+    <id>http://fanwenbin.com/2011/05/11/add-more-smilies-for-wordpres</id>
+    <content type="html"><![CDATA[<p>前一阵子无聊，从人人上扒了几个很实用的表情下来，想要加到博客中，却发现困难重重。</p>
+
+<p><img src="http://fanwenbin.com/images/2011/05/morepic.jpg" alt="效果图" /></p>
+
+<ol>
+<li><p>首先要一个一个添加表情。</p></li>
+<li><p>其次，还要在相应位置显示</p></li>
+<li><p>最后，单击添加表情后要能够顺利提交显示。</p></li>
+</ol>
+
+
+<!--more-->
+
+
+<p>特别是这个提交后的显示问题，困扰了我很久，后来在万兄的博客上看到了这篇文章，果断搞定了。</p>
+
+<p>事情是这样的：</p>
+
+<ol>
+<li><p>制作包含表情的morepics.php文件</p></li>
+<li><p>修改comments.php</p></li>
+<li><p>修改/wp-includes/functions.php</p></li>
+<li><p>上传表情（放在/wp-includes/images/smilies 目录下）</p></li>
+<li><p>编写js代码</p></li>
+</ol>
+
+
+<p>相关文件</p>
+
+<ul>
+<li><p><a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_733882882&amp;rss=1">morepic.php</a></p></li>
+<li><p><a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_733884030&amp;rss=1">表情文件</a></p></li>
+<li><p>comments.php这样修改：</p></li>
+</ul>
+
+
+<p>搜索&lt;div>，添加</p>
+
+<pre><code>&lt;span id=”morepics”&gt;&lt;?php include(TEMPLATEPATH . ‘/morepic.php’); ?&gt;&lt;/span&gt;
+
+&lt;span id=”morepic”&gt;&lt;a&gt;更多&lt;/a&gt;&lt;/span&gt;
+</code></pre>
+
+<p>这段代码作用是引入新增加的表情文件。</p>
+
+<p>修改<code>/wp-includes/functions.php</code></p>
+
+<p>找到<code>’:mrgreen:’</code> => <code>‘icon_mrgreen.gif’,</code></p>
+
+<p>按照这种格式进行添加，你懂得。</p>
+
+<p>编写js代码：</p>
+
+<pre><code>//更多表情
+jQuery(document).ready(function(){
+   $('#morepics').hide();
+   $('#morepic a').toggle(function(){
+   $('#morepics').show(300).addClass("morepics");
+   $(this).text('更少');
+   },function(){
+   $('#morepics').hide(300);
+   $(this).text('更多');
+   });
+});
+</code></pre>
+
+<p>不了解jQuery的看<a href="http://fanwenbin.com/2011/04/10/how-to-use-jquery/">这里</a>。CSS嘛，自己动手吧。</p>
+
+<p>越折腾，越快乐！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[WordPres变态获取新浪微博RSS]]></title>
+    <link href="http://fanwenbin.com/2011/04/20/wordpres-get-weibo-rss/"/>
+    <updated>2011-04-20T15:29:00+08:00</updated>
+    <id>http://fanwenbin.com/2011/04/20/wordpres-get-weibo-rss</id>
+    <content type="html"><![CDATA[<p>RT，新浪还是不够开放，采用这种方法是逼不得已，之所以称之“变态”，是受到<a href="http://www.bufuzao.com/">“天涯”</a>的影响。</p>
+
+<p>下面我们开始获取新浪微博的信息：</p>
+
+<h2>准备好FireFox，Firebug，文本编辑器，开工！</h2>
+
+<p>用FireFox访问这个地址试试：</p>
+
+<p><a href="http://v.t.sina.com.cn/widget/widget_blog.php?height=500&amp;skin=wd_01&amp;showpic=1&amp;uid=1865764142">http://v.t.sina.com.cn/widget/widget_blog.php?height=500&amp;skin=wd_01&amp;showpic=1&amp;uid=1865764142</a></p>
+
+<p>（把链接中的UID换成你的。获取新浪微博ID可点击微博首页头像下方粉丝、关注或者微博链接，在新打开的网页地址栏中可见。）</p>
+
+<p>没错，这是我的新浪微博的Widget。表面上看不出神马端倪，按下F12(打开Firebug)，你懂的</p>
+
+<p><img src="http://fanwenbin.com/images/2011/04/sinarss.jpg" alt="示意图" /></p>
+
+<!--more-->
+
+
+<p>图中所示，分别是显示内容和时间的元素，我们只需要获取这些。</p>
+
+<p>折腾了一天<a href="http://www.williamlong.info/archives/2080.html">月光</a>提供的方法，未果。他的提供sinarss2.php中的竟然是固定的，也难怪好多童鞋说时间有问题。修改了其中的部分信息，比如不想要输出rss，只要输出几个元素就行，时间可以直接从sina的Widget那里获取等等，代码就不贴了，影响页面美观，要用的直接<a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_709386276&amp;rss=1">下载</a>我改好的吧。</p>
+
+<h2>将下载得到的sinarss.php（需要修改ID）上传到网站根目录。</h2>
+
+<p>打开显示微博信息的页面，在要显示的位置加入以下代码（比如我加入到了footer.php中）</p>
+
+<pre><code>&lt;?php
+    include('simple_html_dom.php');
+    $html = new simple_html_dom();
+    $html---&gt;load_file('http://你的博客地址/sinarss.php?id=1865764142');
+    echo $html;
+    foreach($html-&amp;gt;find('a') as $element){
+       echo $element-&amp;gt;a;
+    }
+?&gt;
+</code></pre>
+
+<p>代码中的？Id=1865764142还是需要修改成你的。</p>
+
+<h2>Wait，还有一步。</h2>
+
+<p>下载<a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_709384196&amp;rss=1">simple_html_dom.php</a>，上传至站点根目录。这个文件是用来获取dom元素的库文件。可以到这里详细了解一下：<a href="http://phpdom.comsing.com/">http://phpdom.comsing.com/</a></p>
+
+<p>至此，大功告成。</p>
+
+<p>PS:以上两个文件亦可到<a href="http://fanwenbin.com/disk">网盘</a>页面搜寻。</p>
 ]]></content>
   </entry>
   

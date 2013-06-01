@@ -93,31 +93,33 @@
 
 <div class="entry-content"><p>修改hosts是必须的，例如在本地测试我的博客，hosts文件中添加 127.0.0.1  demo.ifffff.com</p>
 
-<p>打开终端，cd /etc/apache2/sites-available 回车</p>
+<p>打开终端，<code>cd /etc/apache2/sites-available</code> 回车</p>
 
-<p>sudo cp default demo.ifffff.com</p>
+<pre><code>sudo cp default demo.ifffff.com
 
-<p>sudo gedit demo.ifffff.com</p>
+sudo gedit demo.ifffff.com
+</code></pre>
 
 <!--more-->
 
 
 <p>复制下面的文字到demo.ifffff.com这个文件中，ServerName和DocumentRoot改成你自己的。</p>
 
-<p><VirtualHost *:80>
+<pre><code>&lt;VirtualHost *:80&gt;
 ServerName demo.ifffff.com
-ServerAdmin <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#x64;&#109;&#x69;&#110;&#64;&#x69;&#x66;&#102;&#x66;&#102;&#102;&#46;&#x63;&#x6f;&#109;">&#x61;&#x64;&#109;&#105;&#110;&#x40;&#x69;&#102;&#x66;&#x66;&#102;&#x66;&#x2e;&#x63;&#x6f;&#x6d;</a>
+ServerAdmin admin@ifffff.com
 DocumentRoot “/var/www/ifffff/”
 ErrorLog “/var/log/apache2/edunuke_errors.log”
 CustomLog “/var/log/apache2/edunuke_accesses.log” common
-</VirtualHost></p>
+&lt;/VirtualHost&gt;
+</code></pre>
 
 <p>终端输入：
-sudo a2ensite demo.iffff.com 回车</p>
+<code>sudo a2ensite demo.iffff.com</code> 回车</p>
 
-<p>这样的话，虚拟主机站点 demo.ifffff.com 就已经安装好了。这时也可以在 /etc/apache2/sites-enabled/ 目录中发现多了一个到/etc/apache2/sites-available/demo.ifffff.com 的软链接。接下来就是将 Apache2 重启来使虚拟主机站点运行起来：</p>
+<p>这样的话，虚拟主机站点 demo.ifffff.com 就已经安装好了。这时也可以在 <code>/etc/apache2/sites-enabled/</code> 目录中发现多了一个到<code>/etc/apache2/sites-available/demo.ifffff.com</code> 的软链接。接下来就是将 Apache2 重启来使虚拟主机站点运行起来：</p>
 
-<p>sudo /etc/init.d/apache2 restart 这里可以使用reload 重新加载</p>
+<p><code>sudo /etc/init.d/apache2 restart</code> 这里可以使用reload 重新加载</p>
 
 <p>访问demo.ifffff.com 一切就妥妥的了～</p>
 </div>
@@ -189,7 +191,7 @@ var jiathis_config = {data_track_clickback:'true'};
         <a class="basic-alignment left" href="/2012/04/22/ubuntu-php-apache-mysql/" title="Previous Post: Ubuntu搭建PHP+Apache+MySQL环境">&laquo; Ubuntu搭建PHP+Apache+MySQL环境</a>
       
       
-        <a class="basic-alignment right" href="/2012/05/11/faststone-capture-6-dot-7-serial-number/" title="Next Post: FastStone Capture 6.7 序列号">FastStone Capture 6.7 序列号 &raquo;</a>
+        <a class="basic-alignment right" href="/2012/06/01/google-china-search-guide/" title="Next Post: Google中文搜索指南">Google中文搜索指南 &raquo;</a>
       
     </p>
   </footer>

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>loading演示demo</title>
+<style type="text/css">
+img{display:none;}
+#page_loading{position:absolute;left:0;width:100%;height:7px;margin-top:100px;}
+#page_loading_show{display:none;height:7px;background:#6D86B7;}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery(window).load(function(){
+		$("#page_loading_show").animate({width:"100%"},function(){
+			setTimeout(function(){$("#page_loading").animate({opacity:'toggle'},800);},800);
+		});
+	}); 
+</script>
+</head>
+
+<body> 
+<div id="page_loading">
+    <div style="width:0%;" id="page_loading_show"></div>
+</div>
+<img src="http://hiphotos.baidu.com/every_king/pic/item/e3320737f75b2f5f91ef3943.jpg" />
+<script type="text/javascript">$("#page_loading_show").animate({width:"10%"});</script>
+<img src="http://hiphotos.baidu.com/every_king/pic/item/e3320737f75b2f5f91ef3943.jpg" />
+<script type="text/javascript">$("#page_loading_show").animate({width:"20%"});</script>
+<img src="http://upload3.mop.com/upload3/2009/05/19/04/1242722288089.jpg" />
+<script type="text/javascript">$("#page_loading_show").animate({width:"80%"});</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

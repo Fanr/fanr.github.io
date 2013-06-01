@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: jQuery | 范文斌的博客]]></title>
+  <link href="http://fanwenbin.com/categories/jquery/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-06-01T15:58:05+08:00</updated>
+  <id>http://fanwenbin.com/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[jQuery显示网页加载进度]]></title>
+    <link href="http://fanwenbin.com/2011/05/15/jquery-show-loading/"/>
+    <updated>2011-05-15T14:56:00+08:00</updated>
+    <id>http://fanwenbin.com/2011/05/15/jquery-show-loading</id>
+    <content type="html"><![CDATA[<p>近来发现整什么都想和jQuery靠点边，没办法啊没办法。</p>
+
+<p>前天<a href="http://izzzzz.com/">@曾哥</a>看到ZWW的这效果，非要我搞出来，这熊孩子。</p>
+
+<p>开始之前我们需要了解Wordpress模板的加载顺序，如图：</p>
+
+<p><img src="/images/2011/05/page_loading.gif" alt="原理图" /></p>
+
+<p>其次，就是要在适当的位置插入jQuery脚本了。</p>
+
+<!--more-->
+
+
+<h2>一、引入jQuery</h2>
+
+<p>玩jQuery神马的必须的，不明白的看<a href="http://fanwenbin.com/how-to-use-jquery/">这里</a></p>
+
+<h2>二、jQuery代码</h2>
+
+<pre><code>&lt;script type="text/javascript"&gt;
+    jQuery(window).load(function(){
+        $("#page_loading_show").animate({width:"100%"},function(){
+            setTimeout(function(){
+                $("#page_loading").animate({opacity:'toggle'},800);},800);
+        });
+    }); 
+&lt;/script&gt;
+</code></pre>
+
+<h3>1.在要显示页面加载进入的地方放入下面代码：</h3>
+
+<pre><code>&lt;div id="page_loading"&gt;
+    &lt;div style="width: 0%;display: none;" id="page_loading_show"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>2.根据上图，分别在各页面适当的位置加入以下代码：</h3>
+
+<pre><code>&lt;script type=”text/javascript”&gt;
+    $(“#page_loading_show”).animate({width:”10%”});
+&lt;/script&gt;
+</code></pre>
+
+<p>其中的10%就是要修改的内容，20%，30% …   你懂的</p>
+
+<h2>三、CSS相关</h2>
+
+<pre><code>#page_loading{position:absolute;left:0;width:100%;height:7px;}
+#page_loading_show{display:none;height:1px;background:#d54e21;}
+</code></pre>
+
+<p>DEMO页有悄悄下载2副图片的说。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[如何正确使用jQuery]]></title>
+    <link href="http://fanwenbin.com/2011/04/10/how-to-use-jquery/"/>
+    <updated>2011-04-10T15:07:00+08:00</updated>
+    <id>http://fanwenbin.com/2011/04/10/how-to-use-jquery</id>
+    <content type="html"><![CDATA[<p>好多童鞋问我怎么引入jQuery，看样子是时候把这个写出来Mark一下，以后写jQuery的文章就可以直接平滑的叙述了。</p>
+
+<p><img src="/images/2011/04/jquery_icon.png" alt="jQuery" /></p>
+
+<p><em>“Write less,do more”</em> 这就是为什么选它的缘故。</p>
+
+<h2>1.引入jQuery:</h2>
+
+<h3>1.1.下载</h3>
+
+<p>上 <a href="http://jquery.com/">jQuery官网</a> 下载库文件。</p>
+
+<p>文件分类两种：Production(29KB)和Development(214KB)两种版本，我们只需要用压缩的Production版本即可。</p>
+
+<p>当前的版本是1.5.2</p>
+
+<p>下载后，在网页文件的</head>标签之前加入</p>
+
+<pre><code>&lt;script type="text/javascript" src="jquery-1.5.2.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<!--more-->
+
+
+<h3>1.2.Google</h3>
+
+<p>Google已经为我们准备好了人人可以引用的jQuery库，除非你的站点载入速度十分、非常、很、快，否则，还是用Google大大的吧。担心Google服务会被屏蔽掉的童鞋可以尽情的使用第一种。</p>
+
+<p>同样是在网页文件的</head>标签之前加入</p>
+
+<pre><code>&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Google已经为我们整理好了文件，只需要修改/1.5.2/这里就可以选择到不同版本的jQuery了。</p>
+
+<h2>2.使用jQuery</h2>
+
+<h3>2.1.书写</h3>
+
+<p>jQuery的写法很灵活，比如你可以在</head>之前加入</p>
+
+<pre><code>&lt;script&gt;
+    jQuery(ducument).ready(function(){
+         Your code here;
+    });
+&lt;/script&gt;
+</code></pre>
+
+<p>抑或保存成xxx.js文件，并在</head>标签之前引入</p>
+
+<p>js文件中直接这样写（单个代码或多个代码）</p>
+
+<pre><code>jQuery(ducument).ready(function(){
+    //第一个
+    Your code here;
+});
+
+jQuery(ducument).ready(function(){
+    //第二个
+    Your code here;
+})
+</code></pre>
+
+<h3>2.2.多种形式</h3>
+
+<pre><code>jQuery(document).ready(function(){
+    Your code here.
+});
+
+$(document).ready(function(){
+  Your code here.
+});
+
+$(function(){
+  Your code here.
+});
+</code></pre>
+
+<p>以上的书写均是合法的。</p>
+
+<p>至此，你已经初步和jQuery牵手成功。</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Smilies | 范文斌的博客]]></title>
+  <link href="http://fanwenbin.com/categories/smilies/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-06-01T15:58:05+08:00</updated>
+  <id>http://fanwenbin.com/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[为Wordpres添加更多表情]]></title>
+    <link href="http://fanwenbin.com/2011/05/11/add-more-smilies-for-wordpres/"/>
+    <updated>2011-05-11T15:21:00+08:00</updated>
+    <id>http://fanwenbin.com/2011/05/11/add-more-smilies-for-wordpres</id>
+    <content type="html"><![CDATA[<p>前一阵子无聊，从人人上扒了几个很实用的表情下来，想要加到博客中，却发现困难重重。</p>
+
+<p><img src="/images/2011/05/morepic.jpg" alt="效果图" /></p>
+
+<ol>
+<li><p>首先要一个一个添加表情。</p></li>
+<li><p>其次，还要在相应位置显示</p></li>
+<li><p>最后，单击添加表情后要能够顺利提交显示。</p></li>
+</ol>
+
+
+<!--more-->
+
+
+<p>特别是这个提交后的显示问题，困扰了我很久，后来在万兄的博客上看到了这篇文章，果断搞定了。</p>
+
+<p>事情是这样的：</p>
+
+<ol>
+<li><p>制作包含表情的morepics.php文件</p></li>
+<li><p>修改comments.php</p></li>
+<li><p>修改/wp-includes/functions.php</p></li>
+<li><p>上传表情（放在/wp-includes/images/smilies 目录下）</p></li>
+<li><p>编写js代码</p></li>
+</ol>
+
+
+<p>相关文件</p>
+
+<ul>
+<li><p><a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_733882882&amp;rss=1">morepic.php</a></p></li>
+<li><p><a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_733884030&amp;rss=1">表情文件</a></p></li>
+<li><p>comments.php这样修改：</p></li>
+</ul>
+
+
+<p>搜索&lt;div>，添加</p>
+
+<pre><code>&lt;span id=”morepics”&gt;&lt;?php include(TEMPLATEPATH . ‘/morepic.php’); ?&gt;&lt;/span&gt;
+
+&lt;span id=”morepic”&gt;&lt;a&gt;更多&lt;/a&gt;&lt;/span&gt;
+</code></pre>
+
+<p>这段代码作用是引入新增加的表情文件。</p>
+
+<p>修改<code>/wp-includes/functions.php</code></p>
+
+<p>找到<code>’:mrgreen:’</code> => <code>‘icon_mrgreen.gif’,</code></p>
+
+<p>按照这种格式进行添加，你懂得。</p>
+
+<p>编写js代码：</p>
+
+<pre><code>//更多表情
+jQuery(document).ready(function(){
+   $('#morepics').hide();
+   $('#morepic a').toggle(function(){
+   $('#morepics').show(300).addClass("morepics");
+   $(this).text('更少');
+   },function(){
+   $('#morepics').hide(300);
+   $(this).text('更多');
+   });
+});
+</code></pre>
+
+<p>不了解jQuery的看<a href="http://fanwenbin.com/2011/04/10/how-to-use-jquery/">这里</a>。CSS嘛，自己动手吧。</p>
+
+<p>越折腾，越快乐！</p>
+]]></content>
+  </entry>
+  
+</feed>

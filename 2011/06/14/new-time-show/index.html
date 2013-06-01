@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>全新的相对时间显示 - 范文斌的博客</title>
+  <meta name="author" content="范文斌">
+
+  
+  <meta name="description" content="先上Twitter的显示效果： 要简洁，更要清爽！国外的产品用户体验不一般，不是我崇洋媚外，这和我们当前的工作形势有关，国外开放，而国内，严格，拘谨，一个小官就能嚎嚎个没完。 修改后的效果 超出30天后 之前询问过@天涯 关于显示相对时间的问题，天涯老师给出了解决思路，幸好只说了一点， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://fanwenbin.com/2011/06/14/new-time-show">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="范文斌的博客" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<!--link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" -->
+<!--link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" -->
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">范文斌的博客</a></h1>
+  
+    <h2>记录分享每一刻</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:fanwenbin.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">全新的相对时间显示</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-14T14:34:00+08:00" pubdate data-updated="true">Jun 14<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>先上Twitter的显示效果：</p>
+
+<p><img src="/images/2011/06/new_timediff1.jpg" alt="Twitter效果" /></p>
+
+<p>要简洁，更要清爽！国外的产品用户体验不一般，不是我崇洋媚外，这和我们当前的工作形势有关，国外开放，而国内，严格，拘谨，一个小官就能嚎嚎个没完。</p>
+
+<!--more-->
+
+
+<p><img src="/images/2011/06/new_timediff2.jpg" alt="修改后" /></p>
+
+<p>修改后的效果</p>
+
+<p><img src="/images/2011/06/new_timediff3.jpg" alt="30天后的效果" /></p>
+
+<p>超出30天后</p>
+
+<p>之前询问过<a href="http://weibo.com/1463713805">@天涯</a> 关于显示相对时间的问题，天涯老师给出了解决思路，幸好只说了一点，要不也不会折腾出<a href="http://fanwenbin.com/comments-scroll-microblog/">这篇</a></p>
+
+<p>将如下代码抛入functions.php中</p>
+
+<pre><code>/* Time Ago by FANWENBIN */
+function time_ago( $type = 'commennt', $day = 30 ) {
+$d = $type == 'post' ? 'get_post_time' : 'get_comment_time';
+$timediff = time() - $d('U');
+
+/*Show Time Diff*/
+if ($timediff &lt;= 60*60*24*$day){
+echo  human_time_diff($d('U'), strtotime(current_time('mysql', 0))), '前';
+}
+
+/*Show Datetime*/
+if ($timediff &gt; 60*60*24*$day){
+echo  date('M-d',get_comment_date('U')), ' ', get_comment_time('H:i');
+};
+}
+</code></pre>
+
+<p><code>echo  date(‘M-d’,get_comment_date(‘U’))</code> 这句是用来格式化取得的时间，月份是英文显示，</p>
+
+<p>例如：May-01 参见于<a href="http://wange.im/localized-format-time-in-wordpress.html">@万戈</a>，顺便说一下<a href="http://wange.im/wordpress-time-diff-in-posts-and-comments.html">@万戈</a>这篇文章可以这么来。</p>
+
+<p><code>human_time_diff()</code></p>
+
+<p>WP内建函数，用来判断两个时间标记的差异。</p>
+
+<p>以人类可阅读的格式，如“1小时”、“5分钟”、“两天”，返回时间标记的差异。</p>
+
+<p>因为中文版的WP进行了本地化处理，所有的英文都会被自动转化成中文，而修改wp-config.php文件中语言选项define (‘WPLANG’,&lsquo;zh_CN’); 为define (‘WPLANG’,”);时，会导致所有没有被手动更改的文字全部显示为英文，So,只能这么BT的来。</p>
+
+<p>接着，在要显示的地方使用代码 <code>@&lt;?php echo time_ago(); ?&gt;</code> 显示的调用一下下即可。</p>
+
+<p>没有折腾的赶紧，咱得做国际范儿。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">范文斌</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-14T14:34:00+08:00" pubdate data-updated="true">Jun 14<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/wordpress/'>WordPress</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+  
+  	<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+	<span class="jiathis_txt">分享到：</span>
+	<a class="jiathis_button_tsina">新浪微博</a>
+	<a class="jiathis_button_tqq">腾讯微博</a>
+	<a class="jiathis_button_t163">网易微博</a>
+	<a class="jiathis_button_tsohu">搜狐微博</a>
+	<a class="jiathis_button_douban">豆瓣</a>
+	<a class="jiathis_button_weixin">微信</a>
+	<a href="http://www.jiathis.com/share?uid=1585980" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1585980" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=89596" async=""></script>
+<!-- UY END -->
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2011/05/15/jquery-show-loading/" title="Previous Post: jQuery显示网页加载进度">&laquo; jQuery显示网页加载进度</a>
+      
+      
+        <a class="basic-alignment right" href="/2011/12/27/the-moment-that-could-not-last/" title="Next Post: The Moment That Could Not Last">The Moment That Could Not Last &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/06/01/markdown-editor-commend/">Markdown编辑器推荐</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/04/23/clean-up-recycle-bin/">清除MAC回收站中的顽固垃圾</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/22/windows-auto-login/">Win8(Windows系列)开机自动登陆系统</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/01/11/fix-Win8-IE10-can-not-open/">解决Win8 IE10无法打开</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/11/13/happy-birthday-2012/">祝我生日快乐</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - 范文斌 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
