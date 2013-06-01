@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: 软件 | 范文斌的博客]]></title>
-  <link href="http://fanwenbin.com/categories/ruan-jian/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Markdown | 范文斌的博客]]></title>
+  <link href="http://fanwenbin.com/categories/markdown/atom.xml" rel="self"/>
   <link href="http://fanwenbin.com/"/>
-  <updated>2013-06-01T12:28:22+08:00</updated>
+  <updated>2013-06-01T12:32:12+08:00</updated>
   <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
