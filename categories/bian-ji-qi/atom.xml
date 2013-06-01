@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 编辑器 | 范文斌的博客]]></title>
+  <link href="http://fanwenbin.com/categories/bian-ji-qi/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-06-01T12:28:22+08:00</updated>
+  <id>http://fanwenbin.com/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Markdown编辑器推荐]]></title>
+    <link href="http://fanwenbin.com/2013/06/01/markdown-editor-commend/"/>
+    <updated>2013-06-01T12:21:00+08:00</updated>
+    <id>http://fanwenbin.com/2013/06/01/markdown-editor-commend</id>
+    <content type="html"><![CDATA[<h2>概述</h2>
+
+<p><img src="http://mouapp.com/Mou_128.png" alt="Mou icon" /></p>
+
+<blockquote><p><strong>Mou</strong>, the missing Markdown editor for <em>web developers</em>.</p>
+
+<p><strong>Markdown</strong> 的目標是實現「易读易写」。</p></blockquote>
+
+<!--more-->
+
+
+<h2>获取Mou</h2>
+
+<p>官网 <a href="http://www.mouapp.com">Mou</a></p>
+
+<h2>如何使用</h2>
+
+<p>下载打开Mou默认打开的既是一份Mou的教学Demo文档，不懂HTML还是要先去看<a href="http://www.w3school.com.cn/html/">HTML教程</a></p>
+
+<h2>Markdown语法说明</h2>
+
+<p>参见 <a href="http://markdown.tw">Markdown语法说明</a></p>
+
+<h2>后话</h2>
+
+<p>Mou <a href="http://chenluois.com">作者</a> 罗晨</p>
+
+<p>Mou <a href="http://moustand.com/">周边</a> 产品</p>
+
+<p><strong>Happy Children&rsquo;s Day!</strong></p>
+]]></content>
+  </entry>
+  
+</feed>
