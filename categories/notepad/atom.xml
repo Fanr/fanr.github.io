@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Notepad | 范文斌的博客]]></title>
+  <link href="http://fanwenbin.com/categories/notepad/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-06-02T22:42:03+08:00</updated>
+  <id>http://fanwenbin.com/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[记事本使用技巧一则]]></title>
+    <link href="http://fanwenbin.com/2010/11/09/notepad-skill/"/>
+    <updated>2010-11-09T22:29:00+08:00</updated>
+    <id>http://fanwenbin.com/2010/11/09/notepad-skill</id>
+    <content type="html"><![CDATA[<p>废话不多说，记事本使用技巧之一</p>
+
+<p>新建一个记事本，然后打开，在开始处写 “ .LOG ”，一定要大写</p>
+
+<p>保存，再打开，就会自动保存上次关闭的时间。类似这个function的优点啊神马的。</p>
+
+<p><img src="/images/2010/11/time.jpg" alt="Notepad" /></p>
+]]></content>
+  </entry>
+  
+</feed>

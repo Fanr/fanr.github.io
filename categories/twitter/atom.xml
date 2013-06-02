@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Twitter | 范文斌的博客]]></title>
+  <link href="http://fanwenbin.com/categories/twitter/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-06-02T22:42:03+08:00</updated>
+  <id>http://fanwenbin.com/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Twitter又挂了]]></title>
+    <link href="http://fanwenbin.com/2010/06/15/twitter-down-again/"/>
+    <updated>2010-06-15T22:34:00+08:00</updated>
+    <id>http://fanwenbin.com/2010/06/15/twitter-down-again</id>
+    <content type="html"><![CDATA[<p>如题，Twitter又挂了……</p>
+
+<p>如图</p>
+
+<p><img src="/images/2010/06/twitter.gif" alt="Twitter" /></p>
+
+<p>看来世界杯期间对于twitter确实是一个挑战。</p>
+
+<p>大鲸鱼，快醒醒。</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -9,7 +9,7 @@
   <meta name="author" content="范文斌">
 
   
-  <meta name="description" content="好多童鞋问我怎么引入jQuery，看样子是时候把这个写出来Mark一下，以后写jQuery的文章就可以直接平滑的叙述了。 “Write less,do more” 这就是为什么选它的缘故。 1.引入jQuery: 1.1.下载 上 jQuery官网 下载库文件。 文件分类两种：Production &hellip;">
+  <meta name="description" content="先看这个Demo 前一阵子加上了木木供图的页面滑动导航，木木用的方法是将此物position:fixed。效果是现实了，不过它就是死死的钉在那里，一动不动，有悖于大家一起“得瑟”的精神. 这个效果和大家在垃圾站看到的广告跟随效果一样，不过是基于jQuery实现的，通吃所有浏览器。 ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +71,53 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/2011/04/11/jquery-follow-scroll/">jQuery之滚动跟随</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-11T21:17:00+08:00" pubdate data-updated="true">Apr 11<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>先看这个<a href="http://fanwenbin.com/demo/jQuery/jQuery_followingScroll.htm">Demo</a></p>
+
+<p>前一阵子加上了<a href="http://immmmm.com/sliding-navigation-final-version.html">木木</a>供图的页面滑动导航，木木用的方法是将此物position:fixed。效果是现实了，不过它就是死死的钉在那里，一动不动，有悖于大家一起“得瑟”的精神.</p>
+
+<p><img src="/images/2011/04/jquery_scroll.jpg" alt="Demo Image" /></p>
+
+<p>这个效果和大家在垃圾站看到的广告跟随效果一样，不过是基于jQuery实现的，通吃所有浏览器。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/2011/04/11/jquery-follow-scroll/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/2011/04/10/how-to-use-jquery/">如何正确使用jQuery</a></h1>
     
     
@@ -126,7 +173,383 @@
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2011/04/02/custom-cursor/">修改页面鼠标样式</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-02T21:24:00+08:00" pubdate data-updated="true">Apr 2<span>nd</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>最近在疯狂的整理电脑文件，一不小心，翻到了曾经的那个精美的鼠标集。</p>
+
+<p>话说明儿个清明小长假，提前的说每个淫都要开心的度过，别整太累，虽说不是神马喜庆的日子…</p>
+
+<p><img src="/images/2011/04/cursor.jpg" alt="Cursor Images" /></p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/2011/04/02/custom-cursor/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2011/04/01/happy-fools-day/">愚人节快乐</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-01T21:31:00+08:00" pubdate data-updated="true">Apr 1<span>st</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>刚在小张的客户群看到有淫说“<a href="http://wange.im/">万戈</a>”疯了，进去一看，果然，万兄和我们开了一个不小的玩笑。</p>
+
+<pre><code>/*愚人节快乐！*/
+html{filter:fliph}
+body{-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
+-moz-transform: skew(0deg, 180deg) scale(-1, 1);
+-o-transform: skew(0deg, 180deg) scale(-1, 1);}
+</code></pre>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/2011/04/01/happy-fools-day/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2011/02/24/jquery-background-scroll/">jQuery网页背景滚动代码</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-02-24T21:36:00+08:00" pubdate data-updated="true">Feb 24<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>年前<a href="http://izzzzz.com/">@曾哥</a>说要主题，想了想，再做一个吧，要功能超强，体验超棒的那种…</p>
+
+<p>回归主题，此功能需要jQuery的支持</p>
+
+<p>代码如下：</p>
+
+<pre><code>&lt;script type="text/javascript"&gt;// &lt;![CDATA[
+    var scrollSpeed = 70;
+    var step = 1;
+    var current = 0;
+    var imageWidth = 1444;
+    var headerWidth = 800;
+    var restartPosition = -(imageWidth - headerWidth);
+    function scrollBg(){
+    current -= step;
+    if (current == restartPosition){
+    current = 0;
+    }
+    $('body').css("background-position","50%"+current+"px");
+    }
+    var init = setInterval("scrollBg()", scrollSpeed);
+    // ]]&gt;
+&lt;/script&gt;
+</code></pre>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/2011/02/24/jquery-background-scroll/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/11/18/zhao-hua-xi-shi/">鲁迅-朝花夕拾</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-18T22:00:00+08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天，再一次看过老男孩，感触颇多。  <a href="http://www.netbeta.info/">@曾哥</a>说他竟然在看朝花夕拾，我想我也该看看。</p>
+
+<p>网络上的资源参差不齐，古分享此文TXT，仅供参考。</p>
+
+<p>下载地址：<a href="http://www.boxcn.net/shared/fmv1i8y6z9">传送门</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/11/13/old-boy/">老男孩</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-13T22:06:00+08:00" pubdate data-updated="true">Nov 13<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>所有70、80、90后都得去看看，什么是经典！<a href="http://v.youku.com/v_show/id_XMjE4MDU1MDE2.html">传送门</a></p>
+
+<p>梦想这东西和经典一样，永远不会因为时间而褪色，反而更显珍贵！</p>
+
+<p><img src="/images/2010/11/laonanhai01.jpg" alt="老男孩1" /></p>
+
+<p><img src="/images/2010/11/laonanhai01.jpg" alt="老男孩2" /></p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/2010/11/13/old-boy/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/11/09/notepad-skill/">记事本使用技巧一则</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-09T22:29:00+08:00" pubdate data-updated="true">Nov 9<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>废话不多说，记事本使用技巧之一</p>
+
+<p>新建一个记事本，然后打开，在开始处写 “ .LOG ”，一定要大写</p>
+
+<p>保存，再打开，就会自动保存上次关闭的时间。类似这个function的优点啊神马的。</p>
+
+<p><img src="/images/2010/11/time.jpg" alt="Notepad" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/11/04/wordpress-call-akismet/">[WordPress]Akismet代码调用</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-04T22:02:00+08:00" pubdate data-updated="true">Nov 4<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>大名鼎鼎的“白忙乎”系统貌似是无人不知，无人不晓了，今天无聊，想把它拦截的spam总数显示出来，遂折腾出此文</p>
+
+<p>在想要显示的位置，比如footer.php中加入如下代码：</p>
+
+<pre><code>拦截spam：&lt;? php echo(number_format(get_option("akismet_spam_count"))); ?&gt;
+</code></pre>
+
+<p>至于进一步的美化工作，就交给各位自己了，嘿嘿</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/06/15/twitter-down-again/">Twitter又挂了</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-06-15T22:34:00+08:00" pubdate data-updated="true">Jun 15<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>如题，Twitter又挂了……</p>
+
+<p>如图</p>
+
+<p><img src="/images/2010/06/twitter.gif" alt="Twitter" /></p>
+
+<p>看来世界杯期间对于twitter确实是一个挑战。</p>
+
+<p>大鲸鱼，快醒醒。</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
+    
+      <a class="prev" href="/page/4/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     

@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>jQuery之滚动跟随 - 范文斌的博客</title>
+  <meta name="author" content="范文斌">
+
+  
+  <meta name="description" content="先看这个Demo 前一阵子加上了木木供图的页面滑动导航，木木用的方法是将此物position:fixed。效果是现实了，不过它就是死死的钉在那里，一动不动，有悖于大家一起“得瑟”的精神. 这个效果和大家在垃圾站看到的广告跟随效果一样，不过是基于jQuery实现的，通吃所有浏览器。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://fanwenbin.com/2011/04/11/jquery-follow-scroll">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="范文斌的博客" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<!--link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" -->
+<!--link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" -->
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">范文斌的博客</a></h1>
+  
+    <h2>记录分享每一刻</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:fanwenbin.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">jQuery之滚动跟随</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-11T21:17:00+08:00" pubdate data-updated="true">Apr 11<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>先看这个<a href="http://fanwenbin.com/demo/jQuery/jQuery_followingScroll.htm">Demo</a></p>
+
+<p>前一阵子加上了<a href="http://immmmm.com/sliding-navigation-final-version.html">木木</a>供图的页面滑动导航，木木用的方法是将此物position:fixed。效果是现实了，不过它就是死死的钉在那里，一动不动，有悖于大家一起“得瑟”的精神.</p>
+
+<p><img src="/images/2011/04/jquery_scroll.jpg" alt="Demo Image" /></p>
+
+<p>这个效果和大家在垃圾站看到的广告跟随效果一样，不过是基于jQuery实现的，通吃所有浏览器。</p>
+
+<!--more-->
+
+
+<h2>设置要跟随页面滑动的元素的css:</h2>
+
+<pre><code>#shangxia{float:left;width:50px;margin:200px 0 0 100px;}
+</code></pre>
+
+<p>这里的margin值需要根据自己的需求进行修改，四个参数依次是“上、右、下、左”。</p>
+
+<h2>jQuery代码:</h2>
+
+<pre><code>$(document).ready(function(){
+        var $sidebar   = $("#shangxia"),
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 400;
+    $window.scroll(function() {
+        if ($window.scrollTop() &gt; offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 200
+            });
+        }
+    });
+});
+</code></pre>
+
+<p>第二行 <code>var $sidebar= $(“#shangxia”)</code>中<code>#shangxia</code>要修改为你的元素。</p>
+
+<p>What? 不会用jQuery？<a href="http://fanwenbin.com/2011/04/10/how-to-use-jquery/">《如何正确使用jQuery》</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">范文斌</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-11T21:17:00+08:00" pubdate data-updated="true">Apr 11<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/jquery/'>jQuery</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+  
+  	<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+	<span class="jiathis_txt">分享到：</span>
+	<a class="jiathis_button_tsina">新浪微博</a>
+	<a class="jiathis_button_tqq">腾讯微博</a>
+	<a class="jiathis_button_t163">网易微博</a>
+	<a class="jiathis_button_tsohu">搜狐微博</a>
+	<a class="jiathis_button_douban">豆瓣</a>
+	<a class="jiathis_button_weixin">微信</a>
+	<a href="http://www.jiathis.com/share?uid=1585980" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1585980" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=89596" async=""></script>
+<!-- UY END -->
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2011/04/10/how-to-use-jquery/" title="Previous Post: 如何正确使用jQuery">&laquo; 如何正确使用jQuery</a>
+      
+      
+        <a class="basic-alignment right" href="/2011/04/20/wordpres-get-weibo-rss/" title="Next Post: WordPres变态获取新浪微博RSS">WordPres变态获取新浪微博RSS &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/06/01/markdown-editor-commend/">Markdown编辑器推荐</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/04/23/clean-up-recycle-bin/">清除MAC回收站中的顽固垃圾</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/22/windows-auto-login/">Win8(Windows系列)开机自动登陆系统</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/01/11/fix-Win8-IE10-can-not-open/">解决Win8 IE10无法打开</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/11/13/happy-birthday-2012/">祝我生日快乐</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - 范文斌 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

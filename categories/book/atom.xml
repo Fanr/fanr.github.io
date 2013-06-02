@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Book | 范文斌的博客]]></title>
+  <link href="http://fanwenbin.com/categories/book/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-06-02T22:42:03+08:00</updated>
+  <id>http://fanwenbin.com/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[鲁迅-朝花夕拾]]></title>
+    <link href="http://fanwenbin.com/2010/11/18/zhao-hua-xi-shi/"/>
+    <updated>2010-11-18T22:00:00+08:00</updated>
+    <id>http://fanwenbin.com/2010/11/18/zhao-hua-xi-shi</id>
+    <content type="html"><![CDATA[<p>今天，再一次看过老男孩，感触颇多。  <a href="http://www.netbeta.info/">@曾哥</a>说他竟然在看朝花夕拾，我想我也该看看。</p>
+
+<p>网络上的资源参差不齐，古分享此文TXT，仅供参考。</p>
+
+<p>下载地址：<a href="http://www.boxcn.net/shared/fmv1i8y6z9">传送门</a></p>
+]]></content>
+  </entry>
+  
+</feed>

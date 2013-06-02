@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Blog | 范文斌的博客]]></title>
+  <link href="http://fanwenbin.com/categories/blog/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-06-02T22:42:03+08:00</updated>
+  <id>http://fanwenbin.com/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[为Blog添加页面切换淡入淡出效果]]></title>
+    <link href="http://fanwenbin.com/2010/05/24/fadein-out/"/>
+    <updated>2010-05-24T22:36:00+08:00</updated>
+    <id>http://fanwenbin.com/2010/05/24/fadein-out</id>
+    <content type="html"><![CDATA[<p>在footer.asp顶部（文件开始位置）加上以下代码即可。</p>
+
+<pre><code>&lt;meta http-equiv="Page-Enter" content="blendTrans(Duration=1)" /&gt;
+&lt;meta http-equiv="Page-Exit" content="blendTrans(Duration=1)" /&gt;
+</code></pre>
+
+<p>以上的代码几乎适用于所有Blog程序和所有页面，大家可以根据自己的需要进行添加。</p>
+
+<p>嘻嘻，切换一下页面，是不是发现更炫了!</p>
+]]></content>
+  </entry>
+  
+</feed>

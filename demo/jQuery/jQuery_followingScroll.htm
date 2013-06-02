@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery浮动</title>
+<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script>
+$(function() {
+    var $sidebar   = $("#sidebar"),
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 15;
+    $window.scroll(function() {
+        if ($window.scrollTop() > offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 0
+            });
+        }
+    });
+}); 
+</script>
+<style type="text/css">
+*{margin:0;padding:0;}
+body{font-size:15px;font-family:'Microsoft YaHei'}
+#wrap{width:500px;margin:0 auto;margin-top:10px;}
+#text{width:300px;}
+#sidebar{width:177px;float:right;border:1px solid #333;padding:10px;background:#6D86B7;}
+</style>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="sidebar">
+		这里会跟随页面滚动哦~<br />
+        这里会跟随页面滚动哦~<br />
+        这里会跟随页面滚动哦~<br />
+        <h2><a href="http://fanr.me">返回 Fanr.me</a></h2>
+	</div>
+	<div id="text">
+    <pre>
+    	当前我们使用的HTML版本是4.01版。
+
+按照《HTML5 INTRODUCE》一书中所说：
+"HTML5是Web的未来，也是Web开发者的
+新希望"
+
+
+
+HTML 5有两大特点:
+
+首先，强化了Web网页的表现性能。除
+了可描绘二维图形外，还准备了用于播
+放视频和音频的标签。
+
+其次，追加了本地数据库等Web应用的功能。
+
+下面将介绍HTML5的一些元素
+
+查看Demo需要使用最新的浏
+览器（IE9\Chrome\FireFox3.6+）
+
+1.文本
+
+<rbuy></ruby><rt></rt>
+
+ruby 元素由一个或多个字符（需要一个解释/
+发音）和一个提供该信息的 rt 
+元素组成，还包括可选的 rp 元
+素，定义当浏览器不支持 "rub
+y" 元素时显示的内容。
+
+查看示例
+
+2.表单
+
+HTML5做足内功，对最常见的数据类型有了
+内建的验证，前端不再伤不起了，哈哈！
+
+可以在Demo页随机输入写数字试试。
+
+查看示例
+
+3.音频和视频
+
+不再需要多余的插件，HTML5自己就能
+搞定！这里主要讨论&lt;video&gt;元素。
+
+查看示例
+
+4.画布
+
+画布元素为2D绘制（线条、填
+充、图像、文本等）提供了一个API。
+
+这是一个复制Win95的Paint程
+序的在线站点。当然，如果
+您的移动设备够先进的话，同
+样是大大滴给力！
+
+5.数据存储
+
+Web Storage (Web存储)
+
+所有主流新版浏览器支持更强大的cookie
+Web SQL Database(Web SQL数据库)
+
+Opera,Chrome,Safari支持典型的数据
+库用法，例如执行 "select * fr
+om table"
+
+6.离线
+
+离线应用。例如我们在网络中断时，W
+eb应用程序的某些功能（比如即时聊
+天）会中断并且失去所有连接。
+
+这种情况通常发生于移动计算领域
+，比如手机上网。
+
+7.拖放
+
+可以查看这个站点
+
+8.Geolocation
+
+共享位置信息
+
+试试 FourSquare 和 Google Map
+
+9.Message、Worker 和 Socket
+
+他们三个是完全不同的三个API,但
+都是通信API
+
+Messaging允许从一个域向另一个
+域发消息
+
+Worker所作的就是为浏览器引入线
+程的简化思想
+
+Socket是创建到服务器的一个连接
+流的一个方法，并且允许服务
+器之间的双向实时通信
+</pre>
+    </div>
+</div>
+</body>
+</html>

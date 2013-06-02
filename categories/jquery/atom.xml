@@ -4,7 +4,7 @@
   <title><![CDATA[Category: jQuery | 范文斌的博客]]></title>
   <link href="http://fanwenbin.com/categories/jquery/atom.xml" rel="self"/>
   <link href="http://fanwenbin.com/"/>
-  <updated>2013-06-01T15:58:05+08:00</updated>
+  <updated>2013-06-02T22:42:03+08:00</updated>
   <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
@@ -70,6 +70,56 @@
 </code></pre>
 
 <p>DEMO页有悄悄下载2副图片的说。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[jQuery之滚动跟随]]></title>
+    <link href="http://fanwenbin.com/2011/04/11/jquery-follow-scroll/"/>
+    <updated>2011-04-11T21:17:00+08:00</updated>
+    <id>http://fanwenbin.com/2011/04/11/jquery-follow-scroll</id>
+    <content type="html"><![CDATA[<p>先看这个<a href="http://fanwenbin.com/demo/jQuery/jQuery_followingScroll.htm">Demo</a></p>
+
+<p>前一阵子加上了<a href="http://immmmm.com/sliding-navigation-final-version.html">木木</a>供图的页面滑动导航，木木用的方法是将此物position:fixed。效果是现实了，不过它就是死死的钉在那里，一动不动，有悖于大家一起“得瑟”的精神.</p>
+
+<p><img src="/images/2011/04/jquery_scroll.jpg" alt="Demo Image" /></p>
+
+<p>这个效果和大家在垃圾站看到的广告跟随效果一样，不过是基于jQuery实现的，通吃所有浏览器。</p>
+
+<!--more-->
+
+
+<h2>设置要跟随页面滑动的元素的css:</h2>
+
+<pre><code>#shangxia{float:left;width:50px;margin:200px 0 0 100px;}
+</code></pre>
+
+<p>这里的margin值需要根据自己的需求进行修改，四个参数依次是“上、右、下、左”。</p>
+
+<h2>jQuery代码:</h2>
+
+<pre><code>$(document).ready(function(){
+        var $sidebar   = $("#shangxia"),
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 400;
+    $window.scroll(function() {
+        if ($window.scrollTop() &gt; offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 200
+            });
+        }
+    });
+});
+</code></pre>
+
+<p>第二行 <code>var $sidebar= $(“#shangxia”)</code>中<code>#shangxia</code>要修改为你的元素。</p>
+
+<p>What? 不会用jQuery？<a href="http://fanwenbin.com/2011/04/10/how-to-use-jquery/">《如何正确使用jQuery》</a></p>
 ]]></content>
   </entry>
   
@@ -159,6 +209,51 @@ $(function(){
 <p>以上的书写均是合法的。</p>
 
 <p>至此，你已经初步和jQuery牵手成功。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[jQuery网页背景滚动代码]]></title>
+    <link href="http://fanwenbin.com/2011/02/24/jquery-background-scroll/"/>
+    <updated>2011-02-24T21:36:00+08:00</updated>
+    <id>http://fanwenbin.com/2011/02/24/jquery-background-scroll</id>
+    <content type="html"><![CDATA[<p>年前<a href="http://izzzzz.com/">@曾哥</a>说要主题，想了想，再做一个吧，要功能超强，体验超棒的那种…</p>
+
+<p>回归主题，此功能需要jQuery的支持</p>
+
+<p>代码如下：</p>
+
+<pre><code>&lt;script type="text/javascript"&gt;// &lt;![CDATA[
+    var scrollSpeed = 70;
+    var step = 1;
+    var current = 0;
+    var imageWidth = 1444;
+    var headerWidth = 800;
+    var restartPosition = -(imageWidth - headerWidth);
+    function scrollBg(){
+    current -= step;
+    if (current == restartPosition){
+    current = 0;
+    }
+    $('body').css("background-position","50%"+current+"px");
+    }
+    var init = setInterval("scrollBg()", scrollSpeed);
+    // ]]&gt;
+&lt;/script&gt;
+</code></pre>
+
+<!--more-->
+
+
+<p>具体的效果可以参考 <a href="http://fanwenbin.com/demo/jQuery/bgScroll.htm">DEMO</a></p>
+
+<hr />
+
+<p>QQ2011又开始大规模掉线，此次竟波及到了偶…</p>
+
+<p>还是GTalk+Gmail+Twitter+FaceBook自在啊！</p>
+
+<p>Today’s internet is ungeiliable! How about u?</p>
 ]]></content>
   </entry>
   

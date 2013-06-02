@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Akismate | 范文斌的博客]]></title>
+  <link href="http://fanwenbin.com/categories/akismate/atom.xml" rel="self"/>
+  <link href="http://fanwenbin.com/"/>
+  <updated>2013-06-02T22:42:03+08:00</updated>
+  <id>http://fanwenbin.com/</id>
+  <author>
+    <name><![CDATA[范文斌]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[[WordPress]Akismet代码调用]]></title>
+    <link href="http://fanwenbin.com/2010/11/04/wordpress-call-akismet/"/>
+    <updated>2010-11-04T22:02:00+08:00</updated>
+    <id>http://fanwenbin.com/2010/11/04/wordpress-call-akismet</id>
+    <content type="html"><![CDATA[<p>大名鼎鼎的“白忙乎”系统貌似是无人不知，无人不晓了，今天无聊，想把它拦截的spam总数显示出来，遂折腾出此文</p>
+
+<p>在想要显示的位置，比如footer.php中加入如下代码：</p>
+
+<pre><code>拦截spam：&lt;? php echo(number_format(get_option("akismet_spam_count"))); ?&gt;
+</code></pre>
+
+<p>至于进一步的美化工作，就交给各位自己了，嘿嘿</p>
+]]></content>
+  </entry>
+  
+</feed>

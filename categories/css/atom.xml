@@ -4,7 +4,7 @@
   <title><![CDATA[Category: CSS | 范文斌的博客]]></title>
   <link href="http://fanwenbin.com/categories/css/atom.xml" rel="self"/>
   <link href="http://fanwenbin.com/"/>
-  <updated>2013-06-01T15:58:05+08:00</updated>
+  <updated>2013-06-02T22:42:03+08:00</updated>
   <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
@@ -44,6 +44,32 @@ _top:expression(eval(document.compatMode &amp;&amp; document.compatMode=='CSS1Co
 </code></pre>
 
 <p>木有demo神马的…</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[愚人节快乐]]></title>
+    <link href="http://fanwenbin.com/2011/04/01/happy-fools-day/"/>
+    <updated>2011-04-01T21:31:00+08:00</updated>
+    <id>http://fanwenbin.com/2011/04/01/happy-fools-day</id>
+    <content type="html"><![CDATA[<p>刚在小张的客户群看到有淫说“<a href="http://wange.im/">万戈</a>”疯了，进去一看，果然，万兄和我们开了一个不小的玩笑。</p>
+
+<pre><code>/*愚人节快乐！*/
+html{filter:fliph}
+body{-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
+-moz-transform: skew(0deg, 180deg) scale(-1, 1);
+-o-transform: skew(0deg, 180deg) scale(-1, 1);}
+</code></pre>
+
+<!--more-->
+
+
+<p>就是介样子的效果：</p>
+
+<p><img src="/images/2011/04/0401.jpg" alt="Fool's Day" /></p>
+
+<p>将上面的代码抛入style.css或者header中，一起庆祝愚人节吧，哈哈！</p>
 ]]></content>
   </entry>
   
