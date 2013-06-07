@@ -4,7 +4,7 @@
   <title><![CDATA[范文斌的博客]]></title>
   <link href="http://fanwenbin.com/atom.xml" rel="self"/>
   <link href="http://fanwenbin.com/"/>
-  <updated>2013-06-06T13:46:04+08:00</updated>
+  <updated>2013-06-07T14:33:00+08:00</updated>
   <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mac常用快捷键]]></title>
+    <link href="http://fanwenbin.com/2013/06/07/macchang-yong-kuai-jie-jian/"/>
+    <updated>2013-06-07T14:27:00+08:00</updated>
+    <id>http://fanwenbin.com/2013/06/07/macchang-yong-kuai-jie-jian</id>
+    <content type="html"><![CDATA[<p>整理了一下Mac下的一些常用快捷键，以备不时之用。</p>
+
+<div><script src='https://gist.github.com/5727394.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Markdown编辑器推荐]]></title>
@@ -816,61 +831,6 @@ jQuery(document).ready(function(){
 <p>不了解jQuery的看<a href="http://fanwenbin.com/2011/04/10/how-to-use-jquery/">这里</a>。CSS嘛，自己动手吧。</p>
 
 <p>越折腾，越快乐！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[WordPres变态获取新浪微博RSS]]></title>
-    <link href="http://fanwenbin.com/2011/04/20/wordpres-get-weibo-rss/"/>
-    <updated>2011-04-20T15:29:00+08:00</updated>
-    <id>http://fanwenbin.com/2011/04/20/wordpres-get-weibo-rss</id>
-    <content type="html"><![CDATA[<p>RT，新浪还是不够开放，采用这种方法是逼不得已，之所以称之“变态”，是受到<a href="http://www.bufuzao.com/">“天涯”</a>的影响。</p>
-
-<p>下面我们开始获取新浪微博的信息：</p>
-
-<h2>准备好FireFox，Firebug，文本编辑器，开工！</h2>
-
-<p>用FireFox访问这个地址试试：</p>
-
-<p><a href="http://v.t.sina.com.cn/widget/widget_blog.php?height=500&amp;skin=wd_01&amp;showpic=1&amp;uid=1865764142">http://v.t.sina.com.cn/widget/widget_blog.php?height=500&amp;skin=wd_01&amp;showpic=1&amp;uid=1865764142</a></p>
-
-<p>（把链接中的UID换成你的。获取新浪微博ID可点击微博首页头像下方粉丝、关注或者微博链接，在新打开的网页地址栏中可见。）</p>
-
-<p>没错，这是我的新浪微博的Widget。表面上看不出神马端倪，按下F12(打开Firebug)，你懂的</p>
-
-<p><img src="http://fanwenbin.com/images/2011/04/sinarss.jpg" alt="示意图" /></p>
-
-<!--more-->
-
-
-<p>图中所示，分别是显示内容和时间的元素，我们只需要获取这些。</p>
-
-<p>折腾了一天<a href="http://www.williamlong.info/archives/2080.html">月光</a>提供的方法，未果。他的提供sinarss2.php中的竟然是固定的，也难怪好多童鞋说时间有问题。修改了其中的部分信息，比如不想要输出rss，只要输出几个元素就行，时间可以直接从sina的Widget那里获取等等，代码就不贴了，影响页面美观，要用的直接<a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_709386276&amp;rss=1">下载</a>我改好的吧。</p>
-
-<h2>将下载得到的sinarss.php（需要修改ID）上传到网站根目录。</h2>
-
-<p>打开显示微博信息的页面，在要显示的位置加入以下代码（比如我加入到了footer.php中）</p>
-
-<pre><code>&lt;?php
-    include('simple_html_dom.php');
-    $html = new simple_html_dom();
-    $html---&gt;load_file('http://你的博客地址/sinarss.php?id=1865764142');
-    echo $html;
-    foreach($html-&amp;gt;find('a') as $element){
-       echo $element-&amp;gt;a;
-    }
-?&gt;
-</code></pre>
-
-<p>代码中的？Id=1865764142还是需要修改成你的。</p>
-
-<h2>Wait，还有一步。</h2>
-
-<p>下载<a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_709384196&amp;rss=1">simple_html_dom.php</a>，上传至站点根目录。这个文件是用来获取dom元素的库文件。可以到这里详细了解一下：<a href="http://phpdom.comsing.com/">http://phpdom.comsing.com/</a></p>
-
-<p>至此，大功告成。</p>
-
-<p>PS:以上两个文件亦可到<a href="http://fanwenbin.com/disk">网盘</a>页面搜寻。</p>
 ]]></content>
   </entry>
   

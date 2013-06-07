@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac | 范文斌的博客]]></title>
   <link href="http://fanwenbin.com/categories/mac/atom.xml" rel="self"/>
   <link href="http://fanwenbin.com/"/>
-  <updated>2013-06-06T13:46:04+08:00</updated>
+  <updated>2013-06-07T14:42:16+08:00</updated>
   <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mac常用快捷键]]></title>
+    <link href="http://fanwenbin.com/2013/06/07/macchang-yong-kuai-jie-jian/"/>
+    <updated>2013-06-07T14:27:00+08:00</updated>
+    <id>http://fanwenbin.com/2013/06/07/macchang-yong-kuai-jie-jian</id>
+    <content type="html"><![CDATA[<p>整理了一下Mac下的一些常用快捷键，以备不时之用。</p>
+
+<p>{% gist 5727394 %}</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[清除MAC回收站中的顽固垃圾]]></title>
