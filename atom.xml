@@ -4,7 +4,7 @@
   <title><![CDATA[范文斌的博客]]></title>
   <link href="http://fanwenbin.com/atom.xml" rel="self"/>
   <link href="http://fanwenbin.com/"/>
-  <updated>2013-06-07T14:33:00+08:00</updated>
+  <updated>2013-06-12T14:27:25+08:00</updated>
   <id>http://fanwenbin.com/</id>
   <author>
     <name><![CDATA[范文斌]]></name>
@@ -12,6 +12,78 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[升级iOS7的那点儿事儿]]></title>
+    <link href="http://fanwenbin.com/2013/06/12/iOS7-beta-update/"/>
+    <updated>2013-06-12T11:54:00+08:00</updated>
+    <id>http://fanwenbin.com/2013/06/12/iOS7-beta-update</id>
+    <content type="html"><![CDATA[<p><img src="http://fanwenbin.com/images/2013/06/iOS7_icon.png" alt="iOS7 icon" /></p>
+
+<p>追完了10号的发布会，总结下来iOS7功能多了，界面娘炮了，不用越狱了，各种集成各种炫。</p>
+
+<h3>升级至iOS7</h3>
+
+<h4>下载</h4>
+
+<p>一个集各型号文件于一身的<a href="http://bbs.weiphone.com/read-htm-tid-6542935.html">帖子</a></p>
+
+<h4>备份</h4>
+
+<p>升级之前一定做好备份工作，使用iTunes升级至iOS7会直接同步之前的所有软件以及设置等。</p>
+
+<h4>开始更新</h4>
+
+<p>升级 iOS7 时要按住 option 键（windows 按 shift 键），选「检查更新」而不是「恢复」。</p>
+
+<h4>结束</h4>
+
+<p>根据备份文件的大小此次升级大概需要30min左右，中途不要断开手机与电脑的连接，耐心等候。</p>
+
+<!--more-->
+
+
+<p><img src="http://fanwenbin.com/images/2013/06/iOS7_1.PNG" alt="Lock View" /></p>
+
+<p>Lock界面很清爽，新增了一款动态壁纸，整体感觉很娘炮。</p>
+
+<p><img src="http://fanwenbin.com/images/2013/06/iOS7_2.PNG" alt="Unlock View" /></p>
+
+<p>左滑unlock，娘炮如初。</p>
+
+<p><img src="http://fanwenbin.com/images/2013/06/iOS7_3.PNG" alt="Home Screen" /></p>
+
+<p>扁平化，不解释，娘炮＋1。</p>
+
+<p><img src="http://fanwenbin.com/images/2013/06/iOS7_4.PNG" alt="Control Center" /></p>
+
+<p>控制中心，很方便。</p>
+
+<p><img src="http://fanwenbin.com/images/2013/06/iOS7_5.PNG" alt="New Notification Center" /></p>
+
+<p>新的通知中心，还有越狱的理由么？</p>
+
+<p><img src="http://fanwenbin.com/images/2013/06/iOS7_6.PNG" alt="AUTO Update" /></p>
+
+<p>App Store自动更新。</p>
+
+<p><img src="http://fanwenbin.com/images/2013/06/iOS7_7.PNG" alt="Background APP" /></p>
+
+<p>支持程序后台驻留，想起了一个越狱插件。</p>
+
+<p><img src="http://fanwenbin.com/images/2013/06/iOS7_8.PNG" alt="Camera+" /></p>
+
+<p>拍照新增了滤镜，不过还是保存原版的好。</p>
+
+<p><img src="http://fanwenbin.com/images/2013/06/iOS7_9.PNG" alt="Album+" /></p>
+
+<p>新的相册界面。</p>
+
+<p>整体感觉尚可，推荐升级。娘炮是共识，设计师要么是女的，要么是甄环传（没看过）的男粉丝，亦或是被逼的？娘炮的勒，不要太娘炮（看过「断奶」）。</p>
+
+<p>美中不足的是某些软件会 Crush，比如 Weico Pro，华丽丽的6元。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mac常用快捷键]]></title>
@@ -754,83 +826,6 @@ echo  date('M-d',get_comment_date('U')), ' ', get_comment_time('H:i');
 <p>使用过程中遇到什么问题荒淫留言讨论。</p>
 
 <p>注：调用最新评论使用了<a href="http://kan.willin.org/">willin</a>同学的代码。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[为Wordpres添加更多表情]]></title>
-    <link href="http://fanwenbin.com/2011/05/11/add-more-smilies-for-wordpres/"/>
-    <updated>2011-05-11T15:21:00+08:00</updated>
-    <id>http://fanwenbin.com/2011/05/11/add-more-smilies-for-wordpres</id>
-    <content type="html"><![CDATA[<p>前一阵子无聊，从人人上扒了几个很实用的表情下来，想要加到博客中，却发现困难重重。</p>
-
-<p><img src="http://fanwenbin.com/images/2011/05/morepic.jpg" alt="效果图" /></p>
-
-<ol>
-<li><p>首先要一个一个添加表情。</p></li>
-<li><p>其次，还要在相应位置显示</p></li>
-<li><p>最后，单击添加表情后要能够顺利提交显示。</p></li>
-</ol>
-
-
-<!--more-->
-
-
-<p>特别是这个提交后的显示问题，困扰了我很久，后来在万兄的博客上看到了这篇文章，果断搞定了。</p>
-
-<p>事情是这样的：</p>
-
-<ol>
-<li><p>制作包含表情的morepics.php文件</p></li>
-<li><p>修改comments.php</p></li>
-<li><p>修改/wp-includes/functions.php</p></li>
-<li><p>上传表情（放在/wp-includes/images/smilies 目录下）</p></li>
-<li><p>编写js代码</p></li>
-</ol>
-
-
-<p>相关文件</p>
-
-<ul>
-<li><p><a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_733882882&amp;rss=1">morepic.php</a></p></li>
-<li><p><a href="http://www.boxcn.net/index.php?rm=box_download_shared_file&amp;shared_name=ulhplstg7h&amp;file_id=f_733884030&amp;rss=1">表情文件</a></p></li>
-<li><p>comments.php这样修改：</p></li>
-</ul>
-
-
-<p>搜索&lt;div>，添加</p>
-
-<pre><code>&lt;span id=”morepics”&gt;&lt;?php include(TEMPLATEPATH . ‘/morepic.php’); ?&gt;&lt;/span&gt;
-
-&lt;span id=”morepic”&gt;&lt;a&gt;更多&lt;/a&gt;&lt;/span&gt;
-</code></pre>
-
-<p>这段代码作用是引入新增加的表情文件。</p>
-
-<p>修改<code>/wp-includes/functions.php</code></p>
-
-<p>找到<code>’:mrgreen:’</code> => <code>‘icon_mrgreen.gif’,</code></p>
-
-<p>按照这种格式进行添加，你懂得。</p>
-
-<p>编写js代码：</p>
-
-<pre><code>//更多表情
-jQuery(document).ready(function(){
-   $('#morepics').hide();
-   $('#morepic a').toggle(function(){
-   $('#morepics').show(300).addClass("morepics");
-   $(this).text('更少');
-   },function(){
-   $('#morepics').hide(300);
-   $(this).text('更多');
-   });
-});
-</code></pre>
-
-<p>不了解jQuery的看<a href="http://fanwenbin.com/2011/04/10/how-to-use-jquery/">这里</a>。CSS嘛，自己动手吧。</p>
-
-<p>越折腾，越快乐！</p>
 ]]></content>
   </entry>
   

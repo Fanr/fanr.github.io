@@ -9,8 +9,7 @@
   <meta name="author" content="范文斌">
 
   
-  <meta name="description" content="如题，Twitter又挂了…… 如图 看来世界杯期间对于twitter确实是一个挑战。 大鲸鱼，快醒醒。
-">
+  <meta name="description" content="大名鼎鼎的“白忙乎”系统貌似是无人不知，无人不晓了，今天无聊，想把它拦截的spam总数显示出来，遂折腾出此文 在想要显示的位置，比如footer.php中加入如下代码： 拦截spam：&lt;? php echo(number_format(get_option(" &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +77,51 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/11/04/wordpress-call-akismet/">[WordPress]Akismet代码调用</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-04T22:02:00+08:00" pubdate data-updated="true">Nov 4<span>th</span>, 2010</time>
+        
+         | <a href="/2010/11/04/wordpress-call-akismet/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>大名鼎鼎的“白忙乎”系统貌似是无人不知，无人不晓了，今天无聊，想把它拦截的spam总数显示出来，遂折腾出此文</p>
+
+<p>在想要显示的位置，比如footer.php中加入如下代码：</p>
+
+<pre><code>拦截spam：&lt;? php echo(number_format(get_option("akismet_spam_count"))); ?&gt;
+</code></pre>
+
+<p>至于进一步的美化工作，就交给各位自己了，嘿嘿</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -184,6 +228,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/06/12/iOS7-beta-update/">升级iOS7的那点儿事儿</a>
+      </li>
     
       <li class="post">
         <a href="/2013/06/07/macchang-yong-kuai-jie-jian/">Mac常用快捷键</a>
@@ -299,10 +347,6 @@
     
       <li class="post">
         <a href="/2010/11/09/notepad-skill/">记事本使用技巧一则</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2010/11/04/wordpress-call-akismet/">[WordPress]Akismet代码调用</a>
       </li>
     
   </ul>
